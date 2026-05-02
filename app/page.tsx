@@ -1,4 +1,6 @@
 import Hero from "@/components/Hero";
+import Tecnologia from "@/components/Tecnologia";
+import CasoReal from "@/components/CasoReal";
 import Servicios from "@/components/Servicios";
 import Nosotros from "@/components/Nosotros";
 import PorQueElegirnos from "@/components/PorQueElegirnos";
@@ -13,6 +15,8 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Tecnologia />
+        <CasoReal />
         <Servicios />
         <Nosotros />
         <PorQueElegirnos />

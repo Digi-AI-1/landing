@@ -2,10 +2,10 @@
 
 @theme {
   /* Brand colors */
-  --color-bg:        #0A0F1E;
-  --color-surface:   #111827;
-  --color-surface2:  #1F2937;
-  --color-border:    #1E3A5F;
+  --color-bg:        #050810;
+  --color-surface:   #0A0F1E;
+  --color-surface2:  #111827;
+  --color-border:    #152040;
 
   /* Accent */
   --color-primary:   #3B82F6;
