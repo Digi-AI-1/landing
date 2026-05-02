@@ -20,9 +20,9 @@ const servicios = [
     descripcion: "Placeholder — descripción de desarrollo web, apps y posicionamiento online.",
   },
   {
-    icon: "🔒",
-    titulo: "Ciberseguridad",
-    descripcion: "Placeholder — descripción de protección de datos e infraestructura digital.",
+    icon: "🛒",
+    titulo: "E-Commerce",
+    descripcion: "Placeholder — descripción de desarrollo y optimización de tiendas online, integraciones y automatización de ventas.",
   },
   {
     icon: "📈",

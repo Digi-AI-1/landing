@@ -10,8 +10,8 @@ export default function CasoReal() {
     <section className="py-24 px-6 bg-[var(--color-surface)]/50">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-3 py-1 rounded-full border border-[var(--color-primary)]/30 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-medium">
-            Caso real
+          <div className="inline-block mb-4 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-sm font-medium">
+            Caso Real
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white">
             De 12 horas de reportes a 4 minutos
@@ -60,7 +60,7 @@ export default function CasoReal() {
         <p className="text-center text-[var(--color-muted)] mt-10 text-lg">
           ¿Querés ver los números reales para tu empresa?{" "}
           <a href="#contacto" className="text-[var(--color-primary)] hover:underline font-medium">
-            Hacemos un diagnóstico gratuito de 48hs.
+            Hacemos un diagnóstico gratuito en 48hs.
           </a>
         </p>
       </div>
