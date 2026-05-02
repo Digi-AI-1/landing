@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Script from "next/script";
 
 type FormState = "idle" | "loading" | "success" | "error";
 
@@ -102,20 +103,15 @@ export default function Contacto() {
               Directo a tu problema.
             </p>
 
-            <div className="flex-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] flex items-center justify-center min-h-[280px]">
-              {/* Replace this div with Calendly embed widget */}
-              <div className="text-center p-8">
-                <div className="text-4xl mb-4">📅</div>
-                <p className="text-[var(--color-muted)] text-sm mb-4">
-                  Calendly embed va acá
-                </p>
-                <a
-                  href="#"
-                  className="inline-block px-6 py-3 rounded-lg bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-semibold transition-colors"
-                >
-                  Agendar reunión
-                </a>
-              </div>
+            <div className="flex-1 rounded-lg overflow-hidden min-h-[400px]">
+              <div
+                className="calendly-inline-widget w-full h-full min-h-[400px]"
+                data-url="https://calendly.com/ignafb101/consultoria-digiai-clone?hide_gdpr_banner=1&background_color=070b14&text_color=ffffff&primary_color=4b93ff"
+              />
+              <Script
+                src="https://assets.calendly.com/assets/external/widget.js"
+                strategy="lazyOnload"
+              />
             </div>
           </div>
         </div>
