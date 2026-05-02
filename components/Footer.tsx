@@ -9,8 +9,6 @@ export default function Footer() {
           © {new Date().getFullYear()} Digi-AI. Todos los derechos reservados.
         </p>
         <div className="flex gap-6 text-sm text-[var(--color-muted)]">
-          <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-          <a href="#" className="hover:text-white transition-colors">Instagram</a>
           <a href="#contacto" className="hover:text-white transition-colors">Contacto</a>
         </div>
       </div>

@@ -2,32 +2,32 @@ const servicios = [
   {
     icon: "⚡",
     titulo: "Transformación Digital",
-    descripcion: "Placeholder — descripción del servicio de transformación digital para tu empresa.",
+    descripcion: "Mapeamos tus procesos, identificamos los cuellos de botella y diseñamos un plan de digitalización que se paga solo en los primeros meses.",
   },
   {
     icon: "🤖",
     titulo: "Inteligencia Artificial",
-    descripcion: "Placeholder — descripción de implementación de IA y automatización de procesos.",
+    descripcion: "Implementamos modelos de IA donde realmente importan: automatización de tareas repetitivas, análisis predictivo y asistentes internos que trabajan 24/7.",
   },
   {
     icon: "📊",
     titulo: "Estrategia de Datos",
-    descripcion: "Placeholder — descripción de análisis de datos y toma de decisiones basada en métricas.",
+    descripcion: "Convertimos tus datos desordenados en dashboards accionables. Dejás de decidir por instinto y empezás a decidir con evidencia.",
   },
   {
     icon: "🌐",
     titulo: "Presencia Digital",
-    descripcion: "Placeholder — descripción de desarrollo web, apps y posicionamiento online.",
+    descripcion: "Sitios web, aplicaciones y plataformas diseñadas para convertir visitantes en clientes. Rápidas, profesionales y optimizadas para posicionamiento.",
   },
   {
     icon: "🛒",
     titulo: "E-Commerce",
-    descripcion: "Placeholder — descripción de desarrollo y optimización de tiendas online, integraciones y automatización de ventas.",
+    descripcion: "Tiendas online que venden de verdad: integraciones con medios de pago locales, logística automatizada y métricas de conversión en tiempo real.",
   },
   {
     icon: "📈",
     titulo: "Marketing Digital",
-    descripcion: "Placeholder — descripción de campañas, SEO y estrategias de crecimiento.",
+    descripcion: "Campañas de adquisición con presupuesto optimizado, SEO técnico y estrategias de crecimiento medibles. Cada peso invertido tiene un retorno claro.",
   },
 ];
 

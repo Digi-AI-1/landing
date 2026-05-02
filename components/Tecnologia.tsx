@@ -2,17 +2,17 @@ const insights = [
   {
     titulo: "La IA ya no es un experimento",
     texto:
-      "Placeholder — las empresas que implementan IA en 2026 no están experimentando, están ejecutando. Los modelos son más baratos, más rápidos y más precisos que hace 12 meses.",
+      "En 2024, el 78% de las empresas Fortune 500 ya integraron IA en al menos un proceso crítico. En Argentina, la mayoría todavía evalúa. Esa brecha es tu oportunidad — pero se achica cada trimestre.",
   },
   {
-    titulo: "Automatizar no es despedir",
+    titulo: "Automatizar no es reemplazar personas",
     texto:
-      "Placeholder — la automatización libera a tu equipo de tareas repetitivas para que se enfoquen en lo que realmente mueve la aguja: estrategia, creatividad y relaciones.",
+      "Tu equipo pierde horas en tareas que una máquina resuelve en segundos. Automatizar esos procesos no elimina puestos — libera a tu gente para hacer lo que una máquina no puede: pensar, negociar y crear.",
   },
   {
-    titulo: "2026: el año de las PyMEs argentinas",
+    titulo: "La ventaja es de quien se mueve primero",
     texto:
-      "Placeholder — la tecnología que antes era exclusiva de multinacionales hoy es accesible para cualquier empresa con 10+ empleados. La ventana de ventaja competitiva se está cerrando.",
+      "La misma tecnología que usaban solo las multinacionales hoy cuesta una fracción. El que la implementa primero en su sector captura el mercado. El que espera, compite contra el que ya la tiene.",
   },
 ];
 
