@@ -1,8 +1,8 @@
 const stats = [
-  { valor: "12hs → 4min", label: "Tiempo de reporting" },
-  { valor: "73%", label: "Reducción de quiebre de stock" },
-  { valor: "6 semanas", label: "Implementación completa" },
-  { valor: "2.1x", label: "ROI en el primer año" },
+  { valor: "12hs → 4min", label: "Tiempo de Reporting" },
+  { valor: "73%", label: "Reducción de Quiebre de Stock" },
+  { valor: "6 semanas", label: "Implementación Completa" },
+  { valor: "2.1x", label: "ROI en el Primer Año" },
 ];
 
 export default function CasoReal() {
@@ -14,7 +14,7 @@ export default function CasoReal() {
             Caso Real
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white">
-            De 12 horas de reportes a 4 minutos
+            De 12 Horas de Reportes a 4 Minutos
           </h2>
         </div>
 

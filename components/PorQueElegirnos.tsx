@@ -1,22 +1,22 @@
 const razones = [
   {
     icon: "🎯",
-    titulo: "Cobramos por resultados, no por horas",
+    titulo: "Cobramos Por Resultados, No Por Horas",
     descripcion: "Nuestros proyectos tienen métricas de éxito definidas desde el día uno. Si no movemos tus números, no cumplimos. Así de simple.",
   },
   {
     icon: "🇦🇷",
-    titulo: "Pensados para la realidad argentina",
+    titulo: "Pensados Para la Realidad Argentina",
     descripcion: "Trabajamos con costos en pesos, entendemos la volatilidad, los plazos locales y las restricciones que las consultoras de afuera ni registran.",
   },
   {
     icon: "🔧",
-    titulo: "Tecnología global, escala local",
+    titulo: "Tecnología Global, Escala Local",
     descripcion: "Usamos las mismas herramientas que Silicon Valley pero calibradas para empresas de 10 a 500 empleados. Sin sobredimensionar, sin subestimar.",
   },
   {
     icon: "🤝",
-    titulo: "No desaparecemos después del proyecto",
+    titulo: "No Desaparecemos Después del Proyecto",
     descripcion: "Seguimos disponibles después de la entrega. Somos un equipo chico a propósito. Cada cliente importa, y se nota en el trato.",
   },
 ];
@@ -26,7 +26,7 @@ export default function PorQueElegirnos() {
     <section id="por-que" className="py-24 px-6 bg-[var(--color-surface)]/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">¿Por qué elegirnos?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">¿Por Qué Elegirnos?</h2>
           <p className="text-[var(--color-muted)] text-lg max-w-xl mx-auto">
             No somos una agencia grande con 200 clientes. Somos un equipo especializado que elige pocos proyectos y los ejecuta en serio.
           </p>

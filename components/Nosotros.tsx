@@ -3,7 +3,7 @@ export default function Nosotros() {
     <section id="nosotros" className="py-24 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Quiénes somos</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Quiénes Somos</h2>
           <p className="text-[var(--color-muted)] text-lg mb-4 leading-relaxed">
             Placeholder: texto sobre la misión y visión del equipo. Quiénes son, de dónde vienen y por qué se enfocan en el mercado argentino.
           </p>
@@ -13,10 +13,10 @@ export default function Nosotros() {
         </div>
         <div className="grid grid-cols-2 gap-4">
           {[
-            { valor: "50+", label: "Clientes atendidos" },
-            { valor: "5", label: "Años de experiencia" },
-            { valor: "98%", label: "Satisfacción del cliente" },
-            { valor: "12", label: "Industrias cubiertas" },
+            { valor: "50+", label: "Clientes Atendidos" },
+            { valor: "5", label: "Años de Experiencia" },
+            { valor: "98%", label: "Satisfacción del Cliente" },
+            { valor: "12", label: "Industrias Cubiertas" },
           ].map((stat) => (
             <div
               key={stat.label}

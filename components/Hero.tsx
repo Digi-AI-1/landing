@@ -129,13 +129,13 @@ export default function Hero() {
             href="#contacto"
             className="px-8 py-4 rounded-lg bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-semibold text-lg transition-colors text-center"
           >
-            Quiero un diagnóstico
+            Quiero un Diagnóstico
           </a>
           <a
             href="#tecnologia"
             className="px-8 py-4 rounded-lg border border-[var(--color-border)] hover:border-[var(--color-primary)]/50 text-white font-semibold text-lg transition-colors text-center"
           >
-            Cómo funciona
+            Cómo Funciona
           </a>
         </div>
       </div>

@@ -8,7 +8,7 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-8 text-sm text-[var(--color-muted)]">
           <a href="#servicios" className="hover:text-white transition-colors">Servicios</a>
           <a href="#nosotros" className="hover:text-white transition-colors">Nosotros</a>
-          <a href="#por-que" className="hover:text-white transition-colors">¿Por qué elegirnos?</a>
+          <a href="#por-que" className="hover:text-white transition-colors">¿Por Qué Elegirnos?</a>
           <a href="#contacto" className="hover:text-white transition-colors">Contacto</a>
         </nav>
         <a

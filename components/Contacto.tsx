@@ -37,14 +37,14 @@ export default function Contacto() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Hablemos</h2>
           <p className="text-[var(--color-muted)] text-lg">
-            Elegí cómo querés avanzar.
+            Elegí Cómo Querés Avanzar.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left pillar — Contact form */}
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
-            <h3 className="text-white font-semibold text-xl mb-2">Contanos sobre tu empresa</h3>
+            <h3 className="text-white font-semibold text-xl mb-2">Contanos Sobre Tu Empresa</h3>
             <p className="text-[var(--color-muted)] text-sm mb-6">
               Dejanos tu consulta y te respondemos en menos de 24hs hábiles.
             </p>
@@ -75,7 +75,7 @@ export default function Contacto() {
                   name="mensaje"
                   required
                   rows={4}
-                  placeholder="Contanos sobre tu empresa y qué necesitás..."
+                  placeholder="Contanos Sobre Tu Empresa y qué necesitás..."
                   className="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-white placeholder:text-[var(--color-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors resize-none"
                 />
                 {state === "error" && (
@@ -88,7 +88,7 @@ export default function Contacto() {
                   disabled={state === "loading"}
                   className="w-full py-3 rounded-lg bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold transition-colors"
                 >
-                  {state === "loading" ? "Enviando..." : "Enviar mensaje"}
+                  {state === "loading" ? "Enviando..." : "Enviar Mensaje"}
                 </button>
               </form>
             )}
@@ -96,7 +96,7 @@ export default function Contacto() {
 
           {/* Right pillar — Calendly CTA */}
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 flex flex-col">
-            <h3 className="text-white font-semibold text-xl mb-2">¿Listo para arrancar?</h3>
+            <h3 className="text-white font-semibold text-xl mb-2">¿Listo Para Arrancar?</h3>
             <p className="text-[var(--color-muted)] leading-relaxed mb-6">
               Agendá 20 minutos con nosotros.<br />
               Sin vueltas, sin presentaciones genéricas.<br />
