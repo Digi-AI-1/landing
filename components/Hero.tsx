@@ -79,9 +79,9 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto w-full">
         <div className="text-center mb-12">
           <div className="inline-block mb-6 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-sm font-medium">
-            Consultoría Digital para empresas argentinas
+            Consultoría Digital Especializada para Empresas Argentinas
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight uppercase tracking-tight">
             Transformá tu empresa<br />
             con <span className="text-[var(--color-primary)]">inteligencia digital</span>
           </h1>

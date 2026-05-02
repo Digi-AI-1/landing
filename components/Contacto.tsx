@@ -98,8 +98,8 @@ export default function Contacto() {
             <h3 className="text-white font-semibold text-xl mb-2">¿Listo para arrancar?</h3>
             <p className="text-[var(--color-muted)] leading-relaxed mb-6">
               Agendá 20 minutos con nosotros.<br />
-              Sin presentación, sin chamuyo.<br />
-              Hablamos de tu problema.
+              Sin vueltas, sin presentaciones genéricas.<br />
+              Directo a tu problema.
             </p>
 
             <div className="flex-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] flex items-center justify-center min-h-[280px]">

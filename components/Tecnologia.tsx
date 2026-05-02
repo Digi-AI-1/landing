@@ -23,13 +23,16 @@ export default function Tecnologia() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">La tecnología cambió. ¿Y tu empresa?</h2>
           <p className="text-[var(--color-muted)] text-lg max-w-2xl mx-auto">
-            No vendemos humo. Te explicamos qué está pasando y por qué importa para tu negocio.
+            Sin promesas vacías. Te mostramos qué está pasando y por qué importa para tu negocio.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {insights.map((insight) => (
-            <div key={insight.titulo} className="flex flex-col gap-4">
+            <div
+              key={insight.titulo}
+              className="flex flex-col gap-4 p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]"
+            >
               <div className="h-1 w-12 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-cyan)] rounded-full" />
               <h3 className="text-white font-semibold text-xl">{insight.titulo}</h3>
               <p className="text-[var(--color-muted)] leading-relaxed">{insight.texto}</p>
