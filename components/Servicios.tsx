@@ -45,7 +45,7 @@ export default function Servicios() {
           {servicios.map((s) => (
             <div
               key={s.titulo}
-              className="p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-primary)]/40 transition-colors"
+              className="p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-primary)]/40 transition-colors card-glow"
             >
               <div className="text-3xl mb-4">{s.icon}</div>
               <h3 className="text-white font-semibold text-lg mb-2">{s.titulo}</h3>

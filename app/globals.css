@@ -2,19 +2,19 @@
 
 @theme {
   /* Brand colors */
-  --color-bg:        #030508;
-  --color-surface:   #070B14;
-  --color-surface2:  #0C1220;
-  --color-border:    #121E38;
+  --color-bg:        #020305;
+  --color-surface:   #080D1A;
+  --color-surface2:  #0E1628;
+  --color-border:    #1A2B4A;
 
   /* Accent */
-  --color-primary:   #4B93FF;
-  --color-primary-hover: #3B82F6;
-  --color-cyan:      #22D3EE;
+  --color-primary:   #5BA0FF;
+  --color-primary-hover: #4B93FF;
+  --color-cyan:      #34D8F0;
 
   /* Text */
   --color-text:      #FFFFFF;
-  --color-muted:     #A1A9B8;
+  --color-muted:     #B0B8C8;
 
   /* Font */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
@@ -30,4 +30,9 @@ body {
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+}
+
+/* Box glow for cards */
+.card-glow {
+  box-shadow: 0 0 20px rgba(91, 160, 255, 0.04), 0 1px 3px rgba(0, 0, 0, 0.3);
 }

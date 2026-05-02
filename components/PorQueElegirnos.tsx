@@ -2,7 +2,7 @@ const razones = [
   {
     icon: "🎯",
     titulo: "Cobramos por resultados, no por horas",
-    descripcion: "Nuestros proyectos tienen métricas de éxito definidas desde el día uno. Si no movemos tus números, no cumplimos — así de simple.",
+    descripcion: "Nuestros proyectos tienen métricas de éxito definidas desde el día uno. Si no movemos tus números, no cumplimos. Así de simple.",
   },
   {
     icon: "🇦🇷",
@@ -17,7 +17,7 @@ const razones = [
   {
     icon: "🤝",
     titulo: "No desaparecemos después del proyecto",
-    descripcion: "Seguimos disponibles después de la entrega. Somos un equipo chico a propósito — cada cliente importa, y se nota en el trato.",
+    descripcion: "Seguimos disponibles después de la entrega. Somos un equipo chico a propósito. Cada cliente importa, y se nota en el trato.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function PorQueElegirnos() {
           {razones.map((r) => (
             <div
               key={r.titulo}
-              className="flex gap-5 p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]"
+              className="flex gap-5 p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] card-glow"
             >
               <span className="text-3xl shrink-0">{r.icon}</span>
               <div>

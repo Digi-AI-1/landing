@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 
 const scenarios = [
   {
-    industry: "Distribuidora de alimentos — 45 empleados",
+    industry: "Distribuidora de alimentos · 45 empleados",
     lines: [
       { type: "check", text: "3 flujos de trabajo con alto potencial de automatización" },
       { type: "check", text: "23hs semanales recuperables en reporting manual" },
@@ -12,7 +12,7 @@ const scenarios = [
     ],
   },
   {
-    industry: "E-commerce de indumentaria — 20 empleados",
+    industry: "E-commerce de indumentaria · 20 empleados",
     lines: [
       { type: "check", text: "Gestión de inventario con 34% de sobrestock eliminable" },
       { type: "check", text: "Atención al cliente automatizable en un 60%" },
@@ -20,7 +20,7 @@ const scenarios = [
     ],
   },
   {
-    industry: "Estudio contable — 12 empleados",
+    industry: "Estudio contable · 12 empleados",
     lines: [
       { type: "check", text: "Carga de datos manual reemplazable con extracción automática" },
       { type: "check", text: "15hs semanales en tareas repetitivas de conciliación" },

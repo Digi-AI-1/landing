@@ -18,7 +18,7 @@ export default function CasoReal() {
           </h2>
         </div>
 
-        <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 md:p-12">
+        <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 md:p-12 card-glow">
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 mb-10">
             <div className="flex-1">
               <div className="text-[var(--color-cyan)] text-sm font-medium mb-2 uppercase tracking-wider">Empresa</div>

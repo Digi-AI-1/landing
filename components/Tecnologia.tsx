@@ -2,12 +2,12 @@ const insights = [
   {
     titulo: "La IA ya no es un experimento",
     texto:
-      "En 2024, el 78% de las empresas Fortune 500 ya integraron IA en al menos un proceso crítico. En Argentina, la mayoría todavía evalúa. Esa brecha es tu oportunidad — pero se achica cada trimestre.",
+      "En 2024, el 78% de las empresas Fortune 500 ya integraron IA en al menos un proceso crítico. En Argentina, la mayoría todavía evalúa. Esa brecha es tu oportunidad, pero se achica cada trimestre.",
   },
   {
     titulo: "Automatizar no es reemplazar personas",
     texto:
-      "Tu equipo pierde horas en tareas que una máquina resuelve en segundos. Automatizar esos procesos no elimina puestos — libera a tu gente para hacer lo que una máquina no puede: pensar, negociar y crear.",
+      "Tu equipo pierde horas en tareas que una máquina resuelve en segundos. Automatizar esos procesos no elimina puestos, libera a tu gente para hacer lo que una máquina no puede: pensar, negociar y crear.",
   },
   {
     titulo: "La ventaja es de quien se mueve primero",
@@ -31,7 +31,7 @@ export default function Tecnologia() {
           {insights.map((insight) => (
             <div
               key={insight.titulo}
-              className="flex flex-col gap-4 p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]"
+              className="flex flex-col gap-4 p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] card-glow"
             >
               <div className="h-1 w-12 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-cyan)] rounded-full" />
               <h3 className="text-white font-semibold text-xl">{insight.titulo}</h3>
