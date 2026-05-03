@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import MetricsTicker from "@/components/MetricsTicker";
 import Tecnologia from "@/components/Tecnologia";
 import CasoReal from "@/components/CasoReal";
 import ROICalculator from "@/components/ROICalculator";
@@ -16,7 +15,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <MetricsTicker />
         <Tecnologia />
         <CasoReal />
         <ROICalculator />

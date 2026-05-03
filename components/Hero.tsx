@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import MetricsTicker from "@/components/MetricsTicker";
 
 const scenarios = [
   {
@@ -152,6 +153,12 @@ export default function Hero() {
           </a>
         </div>
       </div>
+
+      {/* Ticker pinned to bottom of hero, inside the gap */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <MetricsTicker />
+      </div>
+
     </section>
   );
 }
