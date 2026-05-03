@@ -33,18 +33,12 @@ const scenarios = [
 ];
 
 export default function Hero() {
-  const [mounted, setMounted] = useState(false);
   const [scenarioIndex, setScenarioIndex] = useState(0);
   const [visibleLines, setVisibleLines] = useState(0);
   const [analyzing, setAnalyzing] = useState(true);
   const [fading, setFading] = useState(false);
 
   const scenario = scenarios[scenarioIndex];
-
-  useEffect(() => {
-    const t = setTimeout(() => setMounted(true), 80);
-    return () => clearTimeout(t);
-  }, []);
 
   const runAnimation = useCallback(() => {
     setAnalyzing(true);
@@ -86,14 +80,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center pt-16 px-6">
       <div className="max-w-5xl mx-auto w-full">
-
-        {/* Badge + title */}
-        <div
-          className={`text-center mb-8 md:mb-12 transition-all duration-700 ease-out ${
-            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-          style={{ transitionDelay: mounted ? "80ms" : "0ms" }}
-        >
+        <div className="text-center mb-8 md:mb-12">
           <div className="inline-block mb-6 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-xs sm:text-sm font-medium">
             Consultoría Digital Especializada para Empresas Argentinas
           </div>
@@ -103,68 +90,44 @@ export default function Hero() {
           </h1>
         </div>
 
-        {/* Terminal box */}
         <div
-          className={`transition-all duration-700 ease-out ${
-            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-          style={{ transitionDelay: mounted ? "350ms" : "0ms" }}
+          className={`max-w-2xl mx-auto rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 sm:p-6 font-mono text-xs sm:text-sm transition-opacity duration-500 ${fading ? "opacity-0" : "opacity-100"}`}
         >
-          <div
-            className={`max-w-2xl mx-auto rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 sm:p-6 font-mono text-xs sm:text-sm transition-opacity duration-500 ${
-              fading ? "opacity-0" : "opacity-100"
-            }`}
-          >
-            <div className="flex items-center gap-2 mb-4">
-              <span className="w-3 h-3 rounded-full bg-red-500/70" />
-              <span className="w-3 h-3 rounded-full bg-yellow-500/70" />
-              <span className="w-3 h-3 rounded-full bg-green-500/70" />
-              <span className="ml-2 text-[var(--color-muted)] text-xs">digi-ai diagnóstico</span>
-            </div>
-
-            <div className="text-[var(--color-cyan)] mb-3">
-              <span className="text-[var(--color-muted)]">&gt; Industria:</span> {scenario.industry}
-            </div>
-
-            {analyzing ? (
-              <div className="text-[var(--color-muted)] animate-pulse">
-                &gt; Analizando procesos...
-              </div>
-            ) : (
-              <div className="flex flex-col gap-2">
-                {scenario.lines.map((line, i) => (
-                  <div
-                    key={i}
-                    className={`transition-all duration-500 ${
-                      i < visibleLines ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-                    }`}
-                  >
-                    <span className="text-green-400">✓</span>{" "}
-                    <span className="text-[var(--color-text)]">{line.text}</span>
-                  </div>
-                ))}
-              </div>
-            )}
+          <div className="flex items-center gap-2 mb-4">
+            <span className="w-3 h-3 rounded-full bg-red-500/70" />
+            <span className="w-3 h-3 rounded-full bg-yellow-500/70" />
+            <span className="w-3 h-3 rounded-full bg-green-500/70" />
+            <span className="ml-2 text-[var(--color-muted)] text-xs">digi-ai diagnóstico</span>
           </div>
+
+          <div className="text-[var(--color-cyan)] mb-3">
+            <span className="text-[var(--color-muted)]">&gt; Industria:</span> {scenario.industry}
+          </div>
+
+          {analyzing ? (
+            <div className="text-[var(--color-muted)] animate-pulse">
+              &gt; Analizando procesos...
+            </div>
+          ) : (
+            <div className="flex flex-col gap-2">
+              {scenario.lines.map((line, i) => (
+                <div
+                  key={i}
+                  className={`transition-all duration-500 ${i < visibleLines ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}
+                >
+                  <span className="text-green-400">✓</span>{" "}
+                  <span className="text-[var(--color-text)]">{line.text}</span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* Subtitle */}
-        <p
-          className={`text-center text-[var(--color-muted)] mt-8 text-sm sm:text-lg max-w-xl mx-auto transition-all duration-700 ease-out ${
-            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-          style={{ transitionDelay: mounted ? "550ms" : "0ms" }}
-        >
+        <p className="text-center text-[var(--color-muted)] mt-8 text-sm sm:text-lg max-w-xl mx-auto">
           Esto no es un video. Es lo que hacemos. Pero con <span className="text-white font-medium">tus datos</span>.
         </p>
 
-        {/* CTA buttons */}
-        <div
-          className={`flex flex-col sm:flex-row gap-4 justify-center mt-8 transition-all duration-700 ease-out ${
-            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-          style={{ transitionDelay: mounted ? "700ms" : "0ms" }}
-        >
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <a
             href="#contacto"
             className="px-8 py-4 rounded-lg bg-[var(--color-btn)] hover:bg-[var(--color-btn-hover)] text-white font-semibold text-lg transition-colors text-center"
@@ -178,7 +141,6 @@ export default function Hero() {
             Cómo Funciona
           </a>
         </div>
-
       </div>
     </section>
   );

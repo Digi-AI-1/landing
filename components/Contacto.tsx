@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Script from "next/script";
+import { useInView } from "@/hooks/useInView";
 
 type FormState = "idle" | "loading" | "success" | "error";
 
 export default function Contacto() {
   const [state, setState] = useState<FormState>("idle");
+  const { ref, inView } = useInView(0.08);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -33,17 +35,31 @@ export default function Contacto() {
 
   return (
     <section id="contacto" className="py-16 md:py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-10 md:mb-16">
+      <div ref={ref} className="max-w-6xl mx-auto">
+
+        {/* Title */}
+        <div
+          className={`text-center mb-10 md:mb-16 transition-all duration-700 ease-out ${
+            inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Hablemos</h2>
           <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-3xl mx-auto">
-            Si llegaste hasta acá, ya sabés que hay algo en tu operación que la tecnología puede resolver mejor. No lo dejes enfriar — en 48hs tenés un diagnóstico concreto y un plan accionable.
+            Si llegaste hasta acá, ya sabés que hay algo en tu operación que la tecnología puede
+            resolver mejor. No lo dejes enfriar — en 48hs tenés un diagnóstico concreto y un plan
+            accionable.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
           {/* Left pillar — Contact form */}
-          <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-8">
+          <div
+            className={`rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-8 transition-all duration-700 ease-out ${
+              inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
+            style={{ transitionDelay: inView ? "300ms" : "0ms" }}
+          >
             <h3 className="text-white font-semibold text-xl mb-2">Contanos Sobre Tu Empresa</h3>
             <p className="text-[var(--color-muted)] text-sm mb-6">
               Dejanos tu consulta y te respondemos en menos de 24hs hábiles.
@@ -94,15 +110,18 @@ export default function Contacto() {
             )}
           </div>
 
-          {/* Right pillar — Calendly CTA */}
-          <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-6 flex flex-col">
+          {/* Right pillar — Calendly */}
+          <div
+            className={`rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-6 flex flex-col transition-all duration-700 ease-out ${
+              inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
+            style={{ transitionDelay: inView ? "450ms" : "0ms" }}
+          >
             <h3 className="text-white font-semibold text-xl mb-1">¿Listo Para Arrancar?</h3>
             <p className="text-[var(--color-muted)] text-sm leading-relaxed mb-4">
               Agendá 20 minutos. Sin vueltas, directo a tu problema.
             </p>
 
-            {/* Calendly embed — inset framed panel */}
-            {/* Outer div clips overflow; inner div extends -15px right to push the iframe scrollbar out of view */}
             <div className="rounded-xl overflow-hidden border border-[var(--color-border)] h-[540px]">
               <div style={{ marginRight: "-15px", height: "540px" }}>
                 <div
@@ -118,6 +137,7 @@ export default function Contacto() {
               strategy="afterInteractive"
             />
           </div>
+
         </div>
       </div>
     </section>
