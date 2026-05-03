@@ -7,7 +7,10 @@ function useCounter(target: number, decimals: number, active: boolean, delay = 0
   const [value, setValue] = useState(0);
 
   useEffect(() => {
-    if (!active) return;
+    if (!active) {
+      setValue(0);
+      return;
+    }
     let rafId = 0;
     const timeout = setTimeout(() => {
       const duration = 1600;
@@ -35,7 +38,10 @@ function TimeStat({ active }: { active: boolean }) {
   const [stage, setStage] = useState(0);
 
   useEffect(() => {
-    if (!active) return;
+    if (!active) {
+      setStage(0);
+      return;
+    }
     const t1 = setTimeout(() => setStage(1), 600);
     const t2 = setTimeout(() => setStage(2), 1100);
     const t3 = setTimeout(() => setStage(3), 1500);
