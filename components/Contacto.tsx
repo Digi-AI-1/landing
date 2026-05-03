@@ -87,13 +87,18 @@ export default function Contacto() {
                   placeholder="tu@empresa.com"
                   className="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-white placeholder:text-[var(--color-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors"
                 />
-                <textarea
-                  name="mensaje"
-                  required
-                  rows={6}
-                  defaultValue="Hola, me interesa el diagnóstico gratuito para ver qué oportunidades hay en mi empresa. Quedo disponible para coordinar."
-                  className="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-white placeholder:text-[var(--color-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors resize-none"
-                />
+                <div>
+                  <p className="text-[var(--color-muted)]/60 text-xs mb-1.5 px-1">
+                    Contanos sobre tu Empresa y qué necesitás...
+                  </p>
+                  <textarea
+                    name="mensaje"
+                    required
+                    rows={6}
+                    defaultValue="Hola, me interesa el diagnóstico gratuito para ver qué oportunidades hay en mi empresa. Quedo disponible para coordinar."
+                    className="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-white placeholder:text-[var(--color-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors resize-none"
+                  />
+                </div>
                 {state === "error" && (
                   <p className="text-red-400 text-sm text-center">
                     Algo salió mal. Intentá de nuevo.
