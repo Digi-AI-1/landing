@@ -13,9 +13,12 @@ export default function CasoReal() {
           <div className="inline-block mb-4 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-sm font-medium">
             Caso Real
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
             De 12 Horas de Reportes a 4 Minutos
           </h2>
+          <p className="text-[var(--color-muted)] text-lg max-w-2xl mx-auto">
+            Un pipeline de datos, un modelo predictivo y 6 semanas de trabajo. Esto es lo que pasa cuando la IA se aplica al problema correcto.
+          </p>
         </div>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 md:p-12 card-glow">

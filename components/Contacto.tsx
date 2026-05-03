@@ -37,7 +37,7 @@ export default function Contacto() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Hablemos</h2>
           <p className="text-[var(--color-muted)] text-lg">
-            Elegí Cómo Querés Avanzar.
+            Si llegaste hasta acá, ya sabés que hay algo en tu operación que la tecnología puede resolver mejor. No lo dejes enfriar. En 48hs tenés un diagnóstico concreto y un plan accionable sobre tu mesa.
           </p>
         </div>
 

@@ -23,7 +23,7 @@ export default function Tecnologia() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">La Tecnología Cambió. ¿Y Tu Empresa?</h2>
           <p className="text-[var(--color-muted)] text-lg max-w-2xl mx-auto">
-            Sin promesas vacías. Te mostramos qué está pasando y por qué importa para tu negocio.
+            Los modelos de IA que antes requerían equipos de 20 ingenieros hoy se implementan en semanas. Si tu operación todavía depende de planillas y procesos manuales, estás a tiempo de cambiar eso.
           </p>
         </div>
 

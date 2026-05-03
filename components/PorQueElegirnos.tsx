@@ -28,7 +28,7 @@ export default function PorQueElegirnos() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">¿Por Qué Elegirnos?</h2>
           <p className="text-[var(--color-muted)] text-lg max-w-xl mx-auto">
-            Podrías contratar una consultora grande. Pero vas a ser su cliente número 200, y tu proyecto lo van a gestionar juniors.
+            Implementar tecnología sin entender el negocio es el error más caro que puede cometer una empresa. Nosotros empezamos por entender el tuyo.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
