@@ -104,9 +104,11 @@ export default function Contacto() {
             {/* Calendly wrapper — clips bottom, masks white side bars */}
             <div className="relative -mx-6 -mb-6 overflow-hidden rounded-b-xl" style={{ height: "460px" }}>
               {/* Left mask */}
-              <div className="absolute left-0 top-0 bottom-0 w-4 bg-[var(--color-surface)] z-10" />
+              <div className="absolute left-0 top-0 bottom-0 w-10 bg-[var(--color-surface)] z-10" />
               {/* Right mask */}
-              <div className="absolute right-0 top-0 bottom-0 w-4 bg-[var(--color-surface)] z-10" />
+              <div className="absolute right-0 top-0 bottom-0 w-10 bg-[var(--color-surface)] z-10" />
+              {/* Bottom mask */}
+              <div className="absolute left-0 right-0 bottom-0 h-10 bg-[var(--color-surface)] z-10" />
 
               <div
                 className="calendly-inline-widget"
