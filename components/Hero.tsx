@@ -81,12 +81,30 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden min-h-screen flex items-center justify-center pt-16 px-6">
 
-      {/* Animated dot grid */}
+      {/* Gradient orbs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        <div className="hero-grid-bg" />
+        {/* Primary orb — top-right, slow drift */}
         <div
-          className="absolute inset-0"
-          style={{ background: "radial-gradient(ellipse 100% 100% at 50% 50%, transparent 15%, #010203 78%)" }}
+          className="absolute -top-64 -right-64 w-[900px] h-[900px] rounded-full"
+          style={{
+            background: "radial-gradient(circle, rgba(91,160,255,0.18) 0%, rgba(91,160,255,0.06) 45%, transparent 70%)",
+            animation: "hero-orb-1 24s ease-in-out infinite",
+          }}
+        />
+        {/* Cyan orb — bottom-left, different speed */}
+        <div
+          className="absolute -bottom-64 -left-64 w-[800px] h-[800px] rounded-full"
+          style={{
+            background: "radial-gradient(circle, rgba(52,216,240,0.13) 0%, rgba(52,216,240,0.04) 45%, transparent 70%)",
+            animation: "hero-orb-2 30s ease-in-out infinite",
+          }}
+        />
+        {/* Faint center glow behind headline */}
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px] rounded-full"
+          style={{
+            background: "radial-gradient(ellipse, rgba(91,160,255,0.07) 0%, transparent 65%)",
+          }}
         />
       </div>
 
