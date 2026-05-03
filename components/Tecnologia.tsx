@@ -27,7 +27,7 @@ export default function Tecnologia() {
     <section id="tecnologia" className="py-16 md:py-24 px-6">
       <div ref={ref} className="max-w-6xl mx-auto">
         <div
-          className={`text-center mb-10 md:mb-16 transition-all duration-700 ${
+          className={`text-center mb-10 md:mb-16 transition-all duration-700 ease-out ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -45,10 +45,10 @@ export default function Tecnologia() {
           {insights.map((insight, i) => (
             <div
               key={insight.titulo}
-              className={`flex flex-col gap-4 p-5 md:p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] card-glow transition-all duration-700 ${
+              className={`flex flex-col gap-4 p-5 md:p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] card-glow transition-all duration-700 ease-out ${
                 inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
-              style={{ transitionDelay: inView ? `${100 + i * 100}ms` : "0ms" }}
+              style={{ transitionDelay: inView ? `${300 + i * 150}ms` : "0ms" }}
             >
               <div className="h-1 w-12 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-cyan)] rounded-full" />
               <h3 className="text-white font-semibold text-xl">{insight.titulo}</h3>

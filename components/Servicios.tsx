@@ -48,7 +48,7 @@ export default function Servicios() {
     <section id="servicios" className="py-16 md:py-24 px-6">
       <div ref={ref} className="max-w-6xl mx-auto">
         <div
-          className={`text-center mb-10 md:mb-16 transition-all duration-700 ${
+          className={`text-center mb-10 md:mb-16 transition-all duration-700 ease-out ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -63,10 +63,10 @@ export default function Servicios() {
           {servicios.map((s, i) => (
             <div
               key={s.titulo}
-              className={`transition-all duration-700 ${
+              className={`transition-all duration-700 ease-out ${
                 inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
-              style={{ transitionDelay: inView ? `${100 + i * 80}ms` : "0ms" }}
+              style={{ transitionDelay: inView ? `${300 + i * 150}ms` : "0ms" }}
             >
               <div className="h-full p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-primary)]/40 transition-colors card-glow">
                 <div className="text-3xl mb-4">{s.icon}</div>

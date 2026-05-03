@@ -91,7 +91,7 @@ export default function CasoReal() {
       <div ref={ref} className="max-w-5xl mx-auto">
 
         <div
-          className={`text-center mb-10 md:mb-16 transition-all duration-700 ${
+          className={`text-center mb-10 md:mb-16 transition-all duration-700 ease-out ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -108,10 +108,10 @@ export default function CasoReal() {
         </div>
 
         <div
-          className={`rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-8 md:p-12 card-glow transition-all duration-700 ${
+          className={`rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-8 md:p-12 card-glow transition-all duration-700 ease-out ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
-          style={{ transitionDelay: inView ? "150ms" : "0ms" }}
+          style={{ transitionDelay: inView ? "250ms" : "0ms" }}
         >
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 mb-10">
             <div className="flex-1">
@@ -159,7 +159,7 @@ export default function CasoReal() {
               {
                 display: <TimeStat active={inView} />,
                 label: "Tiempo de Reporting",
-                delay: 550,
+                delay: 500,
               },
               {
                 display: <>{pct}%</>,
@@ -169,17 +169,17 @@ export default function CasoReal() {
               {
                 display: <>{semanas} semanas</>,
                 label: "Implementación Completa",
-                delay: 750,
+                delay: 800,
               },
               {
                 display: <>{roi}x</>,
                 label: "ROI en el Primer Año",
-                delay: 850,
+                delay: 950,
               },
             ].map(({ display, label, delay }) => (
               <div
                 key={label}
-                className={`text-center p-4 rounded-lg bg-[var(--color-bg)] transition-all duration-500 ${
+                className={`text-center p-4 rounded-lg bg-[var(--color-bg)] transition-all duration-500 ease-out ${
                   inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                 }`}
                 style={{ transitionDelay: inView ? `${delay}ms` : "0ms" }}

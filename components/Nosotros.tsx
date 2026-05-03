@@ -17,7 +17,7 @@ export default function Nosotros() {
       <div ref={ref} className="max-w-6xl mx-auto">
 
         <div
-          className={`mb-10 md:mb-16 transition-all duration-700 ${
+          className={`mb-10 md:mb-16 transition-all duration-700 ease-out ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -30,10 +30,10 @@ export default function Nosotros() {
         </div>
 
         <div
-          className={`border-l-2 border-[var(--color-primary)] pl-4 md:pl-8 mb-12 md:mb-20 max-w-4xl transition-all duration-700 ${
+          className={`border-l-2 border-[var(--color-primary)] pl-4 md:pl-8 mb-12 md:mb-20 max-w-4xl transition-all duration-700 ease-out ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
-          style={{ transitionDelay: inView ? "100ms" : "0ms" }}
+          style={{ transitionDelay: inView ? "200ms" : "0ms" }}
         >
           <p className="text-white text-base sm:text-xl md:text-2xl leading-relaxed font-light mb-6">
             La mayoría de los proyectos de transformación digital fallan antes de empezar. No por
@@ -52,10 +52,10 @@ export default function Nosotros() {
           {creencias.map((c, i) => (
             <div
               key={c.n}
-              className={`bg-[var(--color-bg)] px-6 py-5 md:py-8 flex flex-col gap-3 transition-all duration-700 ${
+              className={`bg-[var(--color-bg)] px-6 py-5 md:py-8 flex flex-col gap-3 transition-all duration-700 ease-out ${
                 inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
               }`}
-              style={{ transitionDelay: inView ? `${200 + i * 80}ms` : "0ms" }}
+              style={{ transitionDelay: inView ? `${400 + i * 150}ms` : "0ms" }}
             >
               <span className="text-[var(--color-primary)] font-mono text-sm">{c.n}</span>
               <p className="text-white font-medium text-base leading-snug">{c.texto}</p>

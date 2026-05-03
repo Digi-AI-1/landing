@@ -36,7 +36,7 @@ export default function PorQueElegirnos() {
     <section id="por-que" className="py-16 md:py-24 px-6">
       <div ref={ref} className="max-w-6xl mx-auto">
         <div
-          className={`text-center mb-10 md:mb-16 transition-all duration-700 ${
+          className={`text-center mb-10 md:mb-16 transition-all duration-700 ease-out ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -51,10 +51,10 @@ export default function PorQueElegirnos() {
           {razones.map((r, i) => (
             <div
               key={r.titulo}
-              className={`transition-all duration-700 ${
+              className={`transition-all duration-700 ease-out ${
                 inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
-              style={{ transitionDelay: inView ? `${100 + i * 90}ms` : "0ms" }}
+              style={{ transitionDelay: inView ? `${300 + i * 150}ms` : "0ms" }}
             >
               <div className="flex gap-5 p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-primary)]/40 transition-colors card-glow h-full">
                 <span className="text-3xl shrink-0 w-10 text-center">{r.icon}</span>

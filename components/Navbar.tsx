@@ -34,10 +34,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 border-b transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 border-b transition-all duration-500 ${
         scrolled
-          ? "border-[var(--color-border)] bg-[var(--color-bg)] backdrop-blur-sm"
-          : "border-transparent bg-[var(--color-bg)]/70 backdrop-blur-sm"
+          ? "border-[var(--color-border)] bg-[var(--color-bg)]/95 backdrop-blur-md"
+          : "border-transparent bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -50,7 +50,7 @@ export default function Navbar() {
             <a
               key={id}
               href={`#${id}`}
-              className={`relative pb-1 transition-colors duration-200 ${
+              className={`relative pb-1.5 transition-colors duration-200 ${
                 activeSection === id
                   ? "text-white"
                   : "text-[var(--color-muted)] hover:text-white"
@@ -58,10 +58,9 @@ export default function Navbar() {
             >
               {label}
               <span
-                className={`absolute bottom-0 left-0 right-0 h-px bg-[var(--color-primary)] transition-all duration-300 ${
-                  activeSection === id ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"
+                className={`absolute bottom-0 left-0 h-px bg-[var(--color-primary)] transition-all duration-300 ease-out ${
+                  activeSection === id ? "w-full opacity-100" : "w-0 opacity-0"
                 }`}
-                style={{ transformOrigin: "left" }}
               />
             </a>
           ))}
