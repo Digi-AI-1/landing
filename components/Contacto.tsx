@@ -95,20 +95,16 @@ export default function Contacto() {
           </div>
 
           {/* Right pillar — Calendly CTA */}
-          <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 flex flex-col">
+          <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-6 flex flex-col">
             <h3 className="text-white font-semibold text-xl mb-1">¿Listo Para Arrancar?</h3>
             <p className="text-[var(--color-muted)] text-sm leading-relaxed mb-4">
               Agendá 20 minutos. Sin vueltas, directo a tu problema.
             </p>
 
-            {/* Calendly wrapper — clips bottom, masks white side bars */}
-            <div className="relative -mx-6 -mb-6 overflow-hidden rounded-b-xl" style={{ height: "460px" }}>
-              {/* Left mask */}
-              <div className="absolute left-0 top-0 bottom-0 w-10 bg-[var(--color-surface)] z-10" />
-              {/* Right mask */}
-              <div className="absolute right-0 top-0 bottom-0 w-10 bg-[var(--color-surface)] z-10" />
-              {/* Bottom mask */}
-              <div className="absolute left-0 right-0 bottom-0 h-10 bg-[var(--color-surface)] z-10" />
+            {/* Calendly embed — inset framed panel */}
+            <div className="relative rounded-xl overflow-hidden border border-[var(--color-border)] h-[460px]">
+              {/* White overlay: blends with Calendly's background, hides the free-tier badge */}
+              <div className="absolute top-0 right-0 w-28 h-12 bg-white z-10" />
 
               <div
                 className="calendly-inline-widget"
