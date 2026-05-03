@@ -36,8 +36,8 @@ export default function Contacto() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Hablemos</h2>
-          <p className="text-[var(--color-muted)] text-lg">
-            Si llegaste hasta acá, ya sabés que hay algo en tu operación que la tecnología puede resolver mejor. No lo dejes enfriar. En 48hs tenés un diagnóstico concreto y un plan accionable sobre tu mesa.
+          <p className="text-[var(--color-muted)] text-lg max-w-3xl mx-auto">
+            Si llegaste hasta acá, ya sabés que hay algo en tu operación que la tecnología puede resolver mejor. No lo dejes enfriar — en 48hs tenés un diagnóstico concreto y un plan accionable.
           </p>
         </div>
 

@@ -16,7 +16,7 @@ export default function CasoReal() {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
             De 12 Horas de Reportes a 4 Minutos
           </h2>
-          <p className="text-[var(--color-muted)] text-lg max-w-2xl mx-auto">
+          <p className="text-[var(--color-muted)] text-lg max-w-3xl mx-auto">
             Un pipeline de datos, un modelo predictivo y 6 semanas de trabajo. Esto es lo que pasa cuando la IA se aplica al problema correcto.
           </p>
         </div>

@@ -37,8 +37,8 @@ export default function Servicios() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Nuestros Servicios</h2>
-          <p className="text-[var(--color-muted)] text-lg max-w-xl mx-auto">
-            Desde automatización de procesos con IA hasta plataformas que convierten datos en decisiones. Tu negocio funciona. Ahora imaginalo funcionando con inteligencia.
+          <p className="text-[var(--color-muted)] text-lg max-w-3xl mx-auto">
+            Desde automatización de procesos con IA hasta plataformas que convierten datos en decisiones. Tu negocio funciona — ahora imaginalo funcionando con inteligencia.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
