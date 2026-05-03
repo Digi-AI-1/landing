@@ -40,3 +40,33 @@ html {
 .card-glow {
   box-shadow: 0 0 20px rgba(91, 160, 255, 0.04), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
+
+/* Hero animated dot grid */
+@keyframes hero-grid {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(40px, 40px); }
+}
+
+.hero-grid-bg {
+  position: absolute;
+  top: -80px; left: -80px; right: -80px; bottom: -80px;
+  background-image: radial-gradient(rgba(91, 160, 255, 0.09) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: hero-grid 22s linear infinite;
+  will-change: transform;
+}
+
+/* Metrics ticker */
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.ticker-track {
+  animation: ticker 38s linear infinite;
+  will-change: transform;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}

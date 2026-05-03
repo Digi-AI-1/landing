@@ -1,6 +1,8 @@
 import Hero from "@/components/Hero";
+import MetricsTicker from "@/components/MetricsTicker";
 import Tecnologia from "@/components/Tecnologia";
 import CasoReal from "@/components/CasoReal";
+import ROICalculator from "@/components/ROICalculator";
 import Servicios from "@/components/Servicios";
 import Nosotros from "@/components/Nosotros";
 import PorQueElegirnos from "@/components/PorQueElegirnos";
@@ -14,8 +16,10 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <MetricsTicker />
         <Tecnologia />
         <CasoReal />
+        <ROICalculator />
         <Servicios />
         <Nosotros />
         <PorQueElegirnos />

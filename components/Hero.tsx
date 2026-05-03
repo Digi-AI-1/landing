@@ -78,7 +78,17 @@ export default function Hero() {
   }, [runAnimation]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-16 px-6">
+    <section className="relative overflow-hidden min-h-screen flex items-center justify-center pt-16 px-6">
+
+      {/* Animated dot grid */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <div className="hero-grid-bg" />
+        <div
+          className="absolute inset-0"
+          style={{ background: "radial-gradient(ellipse 100% 100% at 50% 50%, transparent 15%, #010203 78%)" }}
+        />
+      </div>
+
       <div className="max-w-5xl mx-auto w-full">
         <div className="text-center mb-8 md:mb-12">
           <div className="inline-block mb-6 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-xs sm:text-sm font-medium">

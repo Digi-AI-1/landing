@@ -1,0 +1,148 @@
+"use client";
+
+import { useState } from "react";
+import { useInView } from "@/hooks/useInView";
+
+function formatARS(n: number): string {
+  return new Intl.NumberFormat("es-AR").format(Math.round(n));
+}
+
+export default function ROICalculator() {
+  const { ref, inView } = useInView(0.08);
+  const [hours, setHours] = useState(12);
+  const [rate, setRate] = useState(5000);
+
+  const hoursPerYear = Math.round(hours * 0.7 * 52);
+  const savingsPerYear = hoursPerYear * rate;
+
+  return (
+    <section className="py-16 md:py-24 px-6">
+      <div ref={ref} className="max-w-4xl mx-auto">
+
+        {/* Header */}
+        <div
+          className={`text-center mb-10 md:mb-14 transition-all duration-700 ease-out ${
+            inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <div className="inline-block mb-4 px-3 py-1 rounded-full border border-[var(--color-primary)]/30 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-medium">
+            Calculadora de ROI
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            ¿Cuánto Vale Tu Tiempo?
+          </h2>
+          <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-2xl mx-auto">
+            Estimá en segundos qué significa la automatización en pesos reales para tu equipo.
+          </p>
+        </div>
+
+        {/* Calculator card */}
+        <div
+          className={`rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-10 card-glow transition-all duration-700 ease-out ${
+            inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+          style={{ transitionDelay: inView ? "250ms" : "0ms" }}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+
+            {/* Inputs */}
+            <div className="flex flex-col gap-9">
+              {/* Hours slider */}
+              <div>
+                <div className="flex justify-between items-baseline mb-3">
+                  <label className="text-white font-medium">Horas manuales por semana</label>
+                  <span className="text-[var(--color-primary)] font-bold font-mono text-xl">
+                    {hours}
+                    <span className="text-sm text-[var(--color-muted)] font-normal ml-1">hs</span>
+                  </span>
+                </div>
+                <input
+                  type="range"
+                  min={2}
+                  max={60}
+                  value={hours}
+                  onChange={(e) => setHours(Number(e.target.value))}
+                  className="w-full cursor-pointer accent-[var(--color-primary)]"
+                />
+                <div className="flex justify-between text-[var(--color-muted)] text-xs mt-2">
+                  <span>2hs</span>
+                  <span>60hs</span>
+                </div>
+              </div>
+
+              {/* Rate slider */}
+              <div>
+                <div className="flex justify-between items-baseline mb-3">
+                  <label className="text-white font-medium">Costo hora promedio</label>
+                  <span className="text-[var(--color-primary)] font-bold font-mono text-xl">
+                    ${formatARS(rate)}
+                    <span className="text-sm text-[var(--color-muted)] font-normal ml-1">ARS</span>
+                  </span>
+                </div>
+                <input
+                  type="range"
+                  min={1000}
+                  max={25000}
+                  step={500}
+                  value={rate}
+                  onChange={(e) => setRate(Number(e.target.value))}
+                  className="w-full cursor-pointer accent-[var(--color-primary)]"
+                />
+                <div className="flex justify-between text-[var(--color-muted)] text-xs mt-2">
+                  <span>$1.000</span>
+                  <span>$25.000</span>
+                </div>
+              </div>
+
+              <p className="text-[var(--color-muted)] text-xs leading-relaxed">
+                Estimación basada en que el 70% de las tareas manuales repetibles son automatizables en un plazo de 6 semanas.
+              </p>
+            </div>
+
+            {/* Outputs */}
+            <div className="flex flex-col gap-4 justify-center">
+              <div className="p-5 rounded-xl bg-[var(--color-bg)] border border-[var(--color-border)]">
+                <div className="text-[var(--color-muted)] text-sm mb-2">Horas recuperables por año</div>
+                <div className="text-4xl font-bold text-white font-mono">
+                  {hoursPerYear}
+                  <span className="text-xl text-[var(--color-muted)] font-normal ml-1">hs</span>
+                </div>
+              </div>
+
+              <div className="p-5 rounded-xl bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/25">
+                <div className="text-[var(--color-muted)] text-sm mb-2">Ahorro anual estimado</div>
+                <div className="text-4xl font-bold text-[var(--color-primary)] font-mono">
+                  ${formatARS(savingsPerYear)}
+                  <span className="text-xl text-[var(--color-muted)] font-normal ml-1">ARS</span>
+                </div>
+              </div>
+
+              <div className="px-5 py-3 rounded-xl border border-[var(--color-border)] flex items-center gap-3">
+                <span className="text-[var(--color-cyan)]">⚡</span>
+                <span className="text-[var(--color-muted)] text-sm">
+                  Resultados visibles en{" "}
+                  <span className="text-white font-medium">6 semanas</span> de implementación.
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          {/* CTA row */}
+          <div className="mt-8 pt-6 border-t border-[var(--color-border)] flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-[var(--color-muted)] text-sm text-center sm:text-left">
+              ¿Querés ver estos números con los datos reales de tu empresa?
+            </p>
+            <a
+              href="#contacto"
+              className="shrink-0 px-6 py-3 rounded-lg bg-[var(--color-btn)] hover:bg-[var(--color-btn-hover)] text-white font-semibold transition-colors text-sm"
+            >
+              Quiero mi Diagnóstico Gratuito
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
