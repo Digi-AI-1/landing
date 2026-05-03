@@ -1,18 +1,18 @@
 const insights = [
   {
-    titulo: "La IA Ya No Es un Experimento",
+    titulo: "El 90% de las 'Transformaciones Digitales' en Argentina Fracasan",
     texto:
-      "En 2024, el 78% de las empresas Fortune 500 ya integraron IA en al menos un proceso crítico. En Argentina, la mayoría todavía evalúa. Esa brecha es tu oportunidad, pero se achica cada trimestre.",
+      "No fracasan por la tecnología. Fracasan porque las implementa gente que no entiende el negocio detrás. Un modelo de IA sin contexto operativo es un gasto, no una inversión. Por eso empezamos por tu operación, no por la herramienta.",
   },
   {
-    titulo: "Automatizar No Es Reemplazar Personas",
+    titulo: "Tu Competencia Ya Está Usando IA. No Te lo Va a Contar.",
     texto:
-      "Tu equipo pierde horas en tareas que una máquina resuelve en segundos. Automatizar esos procesos no elimina puestos, libera a tu gente para hacer lo que una máquina no puede: pensar, negociar y crear.",
+      "Las empresas que integran IA en procesos críticos no lo anuncian. Lo usan como ventaja silenciosa: costos más bajos, decisiones más rápidas, menos errores. Cada trimestre que pasa, la brecha se agranda.",
   },
   {
-    titulo: "La Ventaja Es de Quien Se Mueve Primero",
+    titulo: "La Tecnología No Es Cara. Implementarla Mal, Sí.",
     texto:
-      "La misma tecnología que usaban solo las multinacionales hoy cuesta una fracción. El que la implementa primero en su sector captura el mercado. El que espera, compite contra el que ya la tiene.",
+      "Una licencia de IA cuesta menos que un sueldo junior. El costo real está en elegir mal qué automatizar, en datos sin estructura y en equipos que no saben interpretar los resultados. Ese es exactamente el problema que resolvemos.",
   },
 ];
 

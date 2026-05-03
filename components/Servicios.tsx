@@ -1,33 +1,33 @@
 const servicios = [
   {
     icon: "⚡",
-    titulo: "Transformación Digital",
-    descripcion: "Mapeamos tus procesos, identificamos los cuellos de botella y diseñamos un plan de digitalización que se paga solo en los primeros meses.",
+    titulo: "Diagnóstico y Rediseño de Procesos",
+    descripcion: "Entramos, mapeamos cómo opera tu empresa, y te mostramos exactamente dónde estás perdiendo tiempo y plata. Sin supuestos. Con datos. En 48hs tenés un plan accionable.",
   },
   {
     icon: "🤖",
-    titulo: "Inteligencia Artificial",
-    descripcion: "Implementamos modelos de IA donde realmente importan: automatización de tareas repetitivas, análisis predictivo y asistentes internos que trabajan 24/7.",
+    titulo: "Implementación de IA Aplicada",
+    descripcion: "Identificamos las 2 o 3 tareas de tu operación donde un modelo entrenado genera impacto real y lo implementamos hasta que funcione sin nosotros. Nada de pilotos eternos.",
   },
   {
     icon: "📊",
-    titulo: "Estrategia de Datos",
-    descripcion: "Convertimos tus datos desordenados en dashboards accionables. Dejás de decidir por instinto y empezás a decidir con evidencia.",
+    titulo: "Inteligencia de Negocios",
+    descripcion: "Tus datos ya existen. El problema es que están en 5 planillas distintas y nadie los cruza. Construimos dashboards que te muestran qué está pasando y qué decisión tomar.",
   },
   {
     icon: "🌐",
-    titulo: "Presencia Digital",
-    descripcion: "Sitios web, aplicaciones y plataformas diseñadas para convertir visitantes en clientes. Rápidas, profesionales y optimizadas para posicionamiento.",
+    titulo: "Plataformas Digitales",
+    descripcion: 'Sitios, apps y sistemas internos. No hacemos "páginas bonitas." Hacemos plataformas que convierten, retienen y escalan. Cada funcionalidad tiene un motivo de negocio detrás.',
   },
   {
     icon: "🛒",
-    titulo: "E-Commerce",
-    descripcion: "Tiendas online que venden de verdad: integraciones con medios de pago locales, logística automatizada y métricas de conversión en tiempo real.",
+    titulo: "E-Commerce de Alto Rendimiento",
+    descripcion: "Tiendas que venden, no que existen. Medios de pago argentinos integrados, logística automatizada, y métricas que te dicen por qué compraron y por qué no.",
   },
   {
     icon: "📈",
-    titulo: "Marketing Digital",
-    descripcion: "Campañas de adquisición con presupuesto optimizado, SEO técnico y estrategias de crecimiento medibles. Cada peso invertido tiene un retorno claro.",
+    titulo: "Crecimiento y Adquisición Digital",
+    descripcion: 'Campañas donde cada peso se rastrea de punta a punta. No manejamos "redes sociales." Diseñamos máquinas de generación de demanda con ROI medible.',
   },
 ];
 

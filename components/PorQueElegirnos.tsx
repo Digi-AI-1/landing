@@ -1,23 +1,23 @@
 const razones = [
   {
     icon: "🎯",
-    titulo: "Cobramos Por Resultados, No Por Horas",
-    descripcion: "Nuestros proyectos tienen métricas de éxito definidas desde el día uno. Si no movemos tus números, no cumplimos. Así de simple.",
+    titulo: "Ejecutamos, No Presentamos",
+    descripcion: "No vas a ver un PowerPoint de 80 slides. Hacemos un diagnóstico en 48hs, te mostramos los números, y si tiene sentido arrancamos. Si no aplica, te lo decimos con honestidad.",
+  },
+  {
+    icon: "🧠",
+    titulo: "Experiencia Senior, No Intermediarios",
+    descripcion: "Los que te hacen el diagnóstico son los mismos que implementan. No hay un comercial que te vende y después te pasa a un equipo junior que recién arranca.",
   },
   {
     icon: "🇦🇷",
-    titulo: "Pensados Para la Realidad Argentina",
-    descripcion: "Trabajamos con costos en pesos, entendemos la volatilidad, los plazos locales y las restricciones que las consultoras de afuera ni registran.",
+    titulo: "Hechos Para el Mercado Argentino",
+    descripcion: "Entendemos facturación en pesos, proveedores locales, regulaciones que cambian cada trimestre y equipos que necesitan hacer mucho con poco. No aplicamos frameworks importados que acá no funcionan.",
   },
   {
-    icon: "🔧",
-    titulo: "Tecnología Global, Escala Local",
-    descripcion: "Usamos las mismas herramientas que Silicon Valley pero calibradas para empresas de 10 a 500 empleados. Sin sobredimensionar, sin subestimar.",
-  },
-  {
-    icon: "🤝",
-    titulo: "No Desaparecemos Después del Proyecto",
-    descripcion: "Seguimos disponibles después de la entrega. Somos un equipo chico a propósito. Cada cliente importa, y se nota en el trato.",
+    icon: "⚡",
+    titulo: "Velocidad Real",
+    descripcion: 'Primer diagnóstico en 48hs. Primer entregable en 2 semanas. No tenemos 6 meses de "descubrimiento." Si sabemos qué hay que hacer, lo hacemos.',
   },
 ];
 
@@ -28,7 +28,7 @@ export default function PorQueElegirnos() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">¿Por Qué Elegirnos?</h2>
           <p className="text-[var(--color-muted)] text-lg max-w-xl mx-auto">
-            No somos una agencia grande con 200 clientes. Somos un equipo especializado que elige pocos proyectos y los ejecuta en serio.
+            Podrías contratar una consultora grande. Pero vas a ser su cliente número 200, y tu proyecto lo van a gestionar juniors.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
