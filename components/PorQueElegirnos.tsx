@@ -23,9 +23,9 @@ const razones = [
 
 export default function PorQueElegirnos() {
   return (
-    <section id="por-que" className="py-24 px-6">
+    <section id="por-que" className="py-16 md:py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">¿Por Qué Elegirnos?</h2>
           <p className="text-[var(--color-muted)] text-lg max-w-2xl mx-auto">
             Implementar tecnología sin entender el negocio es el error más caro que puede cometer una empresa. Nosotros empezamos por entender el tuyo.

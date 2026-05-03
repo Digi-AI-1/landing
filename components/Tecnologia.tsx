@@ -18,9 +18,9 @@ const insights = [
 
 export default function Tecnologia() {
   return (
-    <section id="tecnologia" className="py-24 px-6">
+    <section id="tecnologia" className="py-16 md:py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">La Tecnología Cambió. ¿Y Tu Empresa?</h2>
           <p className="text-[var(--color-muted)] text-lg max-w-3xl mx-auto">
             Los modelos de IA que antes requerían equipos de 20 ingenieros hoy se implementan en semanas. Si tu operación todavía depende de planillas y procesos manuales, estás a tiempo de cambiar eso.

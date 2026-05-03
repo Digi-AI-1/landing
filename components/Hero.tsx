@@ -80,18 +80,18 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center pt-16 px-6">
       <div className="max-w-5xl mx-auto w-full">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 md:mb-12">
           <div className="inline-block mb-6 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-sm font-medium">
             Consultoría Digital Especializada para Empresas Argentinas
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight uppercase tracking-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight uppercase tracking-tight">
             Transformá tu empresa<br />
             con <span className="text-[var(--color-primary)]">inteligencia digital</span>
           </h1>
         </div>
 
         <div
-          className={`max-w-2xl mx-auto rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 font-mono text-sm transition-opacity duration-500 ${fading ? "opacity-0" : "opacity-100"}`}
+          className={`max-w-2xl mx-auto rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 sm:p-6 font-mono text-xs sm:text-sm transition-opacity duration-500 ${fading ? "opacity-0" : "opacity-100"}`}
         >
           <div className="flex items-center gap-2 mb-4">
             <span className="w-3 h-3 rounded-full bg-red-500/70" />

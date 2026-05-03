@@ -7,9 +7,9 @@ const stats = [
 
 export default function CasoReal() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-16 md:py-24 px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <div className="inline-block mb-4 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-sm font-medium">
             Caso Real
           </div>
@@ -54,7 +54,7 @@ export default function CasoReal() {
             {stats.map((s) => (
               <div key={s.label} className="text-center p-4 rounded-lg bg-[var(--color-bg)]">
                 <div className="text-2xl font-bold text-[var(--color-primary)] mb-1">{s.valor}</div>
-                <div className="text-[var(--color-muted)] text-xs">{s.label}</div>
+                <div className="text-[var(--color-muted)] text-xs sm:text-sm">{s.label}</div>
               </div>
             ))}
           </div>
