@@ -33,7 +33,7 @@ const servicios = [
 
 export default function Servicios() {
   return (
-    <section id="servicios" className="py-24 px-6 bg-[var(--color-surface)]/30">
+    <section id="servicios" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Nuestros Servicios</h2>
