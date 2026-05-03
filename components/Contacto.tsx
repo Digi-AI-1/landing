@@ -95,18 +95,16 @@ export default function Contacto() {
           </div>
 
           {/* Right pillar — Calendly CTA */}
-          <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 flex flex-col">
-            <h3 className="text-white font-semibold text-xl mb-2">¿Listo Para Arrancar?</h3>
-            <p className="text-[var(--color-muted)] leading-relaxed mb-6">
-              Agendá 20 minutos con nosotros.<br />
-              Sin vueltas, sin presentaciones genéricas.<br />
-              Directo a tu problema.
+          <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 flex flex-col">
+            <h3 className="text-white font-semibold text-xl mb-1">¿Listo Para Arrancar?</h3>
+            <p className="text-[var(--color-muted)] text-sm leading-relaxed mb-4">
+              Agendá 20 minutos. Sin vueltas, directo a tu problema.
             </p>
 
             <div
-              className="calendly-inline-widget flex-1"
-              data-url="https://calendly.com/ignafb101/consultoria-digiai-clone-clone"
-              style={{ minWidth: "320px", height: "700px" }}
+              className="calendly-inline-widget flex-1 -mx-6 -mb-6"
+              data-url="https://calendly.com/ignafb101/consultoria-digiai-clone-clone?hide_event_type_details=1"
+              style={{ minWidth: "280px", height: "580px" }}
             />
             <Script
               src="https://assets.calendly.com/assets/external/widget.js"
