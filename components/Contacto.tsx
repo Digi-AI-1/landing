@@ -101,11 +101,20 @@ export default function Contacto() {
               Agendá 20 minutos. Sin vueltas, directo a tu problema.
             </p>
 
-            <div
-              className="calendly-inline-widget flex-1 -mx-6 -mb-6"
-              data-url="https://calendly.com/ignafb101/consultoria-digiai-clone-clone?hide_event_type_details=1"
-              style={{ minWidth: "280px", height: "580px" }}
-            />
+            {/* Calendly wrapper — clips bottom, masks white side bars */}
+            <div className="relative -mx-6 -mb-6 overflow-hidden rounded-b-xl" style={{ height: "460px" }}>
+              {/* Left mask */}
+              <div className="absolute left-0 top-0 bottom-0 w-4 bg-[var(--color-surface)] z-10" />
+              {/* Right mask */}
+              <div className="absolute right-0 top-0 bottom-0 w-4 bg-[var(--color-surface)] z-10" />
+
+              <div
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/ignafb101/consultoria-digiai-clone-clone?hide_event_type_details=1"
+                style={{ minWidth: "280px", height: "460px" }}
+              />
+            </div>
+
             <Script
               src="https://assets.calendly.com/assets/external/widget.js"
               strategy="afterInteractive"
