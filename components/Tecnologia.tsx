@@ -22,7 +22,7 @@ export default function Tecnologia() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">La Tecnología Cambió. ¿Y Tu Empresa?</h2>
-          <p className="text-[var(--color-muted)] text-lg max-w-3xl mx-auto">
+          <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-3xl mx-auto">
             Los modelos de IA que antes requerían equipos de 20 ingenieros hoy se implementan en semanas. Si tu operación todavía depende de planillas y procesos manuales, estás a tiempo de cambiar eso.
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function Tecnologia() {
           {insights.map((insight) => (
             <div
               key={insight.titulo}
-              className="flex flex-col gap-4 p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] card-glow"
+              className="flex flex-col gap-4 p-5 md:p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] card-glow"
             >
               <div className="h-1 w-12 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-cyan)] rounded-full" />
               <h3 className="text-white font-semibold text-xl">{insight.titulo}</h3>

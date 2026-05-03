@@ -22,10 +22,10 @@ export default function Nosotros() {
 
         {/* Blockquote manifesto */}
         <div className="border-l-2 border-[var(--color-primary)] pl-4 md:pl-8 mb-12 md:mb-20 max-w-4xl">
-          <p className="text-white text-xl md:text-2xl leading-relaxed font-light mb-6">
+          <p className="text-white text-base sm:text-xl md:text-2xl leading-relaxed font-light mb-6">
             La mayoría de los proyectos de transformación digital fallan antes de empezar. No por la tecnología — por cómo se plantean. Se vende una solución antes de entender el problema. Se implementa una herramienta antes de mapear el proceso. El cliente termina con un sistema caro que nadie usa.
           </p>
-          <p className="text-[var(--color-muted)] text-lg leading-relaxed">
+          <p className="text-[var(--color-muted)] text-sm sm:text-lg leading-relaxed">
             Nuestro punto de partida siempre es el mismo: entender cómo funciona tu negocio antes de tocar una sola línea de código. Porque la IA más sofisticada del mundo, aplicada al problema equivocado, es solo un gasto.
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function Nosotros() {
           {creencias.map((c) => (
             <div
               key={c.n}
-              className="bg-[var(--color-bg)] px-6 py-8 flex flex-col gap-4"
+              className="bg-[var(--color-bg)] px-6 py-5 md:py-8 flex flex-col gap-3"
             >
               <span className="text-[var(--color-primary)] font-mono text-sm">{c.n}</span>
               <p className="text-white font-medium text-base leading-snug">{c.texto}</p>

@@ -81,10 +81,10 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center pt-16 px-6">
       <div className="max-w-5xl mx-auto w-full">
         <div className="text-center mb-8 md:mb-12">
-          <div className="inline-block mb-6 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-sm font-medium">
+          <div className="inline-block mb-6 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-xs sm:text-sm font-medium">
             Consultoría Digital Especializada para Empresas Argentinas
           </div>
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight uppercase tracking-tight">
+          <h1 className="text-2xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight uppercase tracking-tight">
             Transformá tu empresa<br />
             con <span className="text-[var(--color-primary)]">inteligencia digital</span>
           </h1>
@@ -123,7 +123,7 @@ export default function Hero() {
           )}
         </div>
 
-        <p className="text-center text-[var(--color-muted)] mt-8 text-lg max-w-xl mx-auto">
+        <p className="text-center text-[var(--color-muted)] mt-8 text-sm sm:text-lg max-w-xl mx-auto">
           Esto no es un video. Es lo que hacemos. Pero con <span className="text-white font-medium">tus datos</span>.
         </p>
 

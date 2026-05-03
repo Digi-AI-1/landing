@@ -36,14 +36,14 @@ export default function Contacto() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Hablemos</h2>
-          <p className="text-[var(--color-muted)] text-lg max-w-3xl mx-auto">
+          <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-3xl mx-auto">
             Si llegaste hasta acá, ya sabés que hay algo en tu operación que la tecnología puede resolver mejor. No lo dejes enfriar — en 48hs tenés un diagnóstico concreto y un plan accionable.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left pillar — Contact form */}
-          <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
+          <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-8">
             <h3 className="text-white font-semibold text-xl mb-2">Contanos Sobre Tu Empresa</h3>
             <p className="text-[var(--color-muted)] text-sm mb-6">
               Dejanos tu consulta y te respondemos en menos de 24hs hábiles.
