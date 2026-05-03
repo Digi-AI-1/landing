@@ -90,7 +90,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="max-w-5xl mx-auto w-full">
+      <div className="relative z-10 max-w-5xl mx-auto w-full">
         <div className="text-center mb-8 md:mb-12">
           <div className="inline-block mb-6 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-xs sm:text-sm font-medium">
             Consultoría Digital Especializada para Empresas Argentinas
@@ -155,7 +155,7 @@ export default function Hero() {
       </div>
 
       {/* Ticker pinned to bottom of hero, inside the gap */}
-      <div className="absolute bottom-0 left-0 right-0">
+      <div className="absolute bottom-0 left-0 right-0 z-10">
         <MetricsTicker />
       </div>
 
