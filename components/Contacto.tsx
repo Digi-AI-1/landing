@@ -90,8 +90,8 @@ export default function Contacto() {
                 <textarea
                   name="mensaje"
                   required
-                  rows={4}
-                  placeholder="Contanos Sobre Tu Empresa y qué necesitás..."
+                  rows={6}
+                  defaultValue="Hola, me interesa el diagnóstico gratuito para ver qué oportunidades hay en mi empresa. Quedo disponible para coordinar."
                   className="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-white placeholder:text-[var(--color-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors resize-none"
                 />
                 {state === "error" && (
