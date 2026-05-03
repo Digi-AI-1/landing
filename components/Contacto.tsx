@@ -102,14 +102,16 @@ export default function Contacto() {
             </p>
 
             {/* Calendly embed — inset framed panel */}
-            <div className="relative rounded-xl overflow-hidden border border-[var(--color-border)] h-[460px]">
-              {/* White overlay: blends with Calendly's background, hides the free-tier badge */}
-              <div className="absolute top-0 right-0 w-28 h-12 bg-white z-10" />
-
+            <div className="relative rounded-xl overflow-hidden border border-[var(--color-border)] h-[540px]">
+              {/* Dark gradient fades from card bg → transparent, covers the free-tier badge in the top-right corner */}
+              <div
+                className="absolute top-0 right-0 w-40 h-28 z-50 pointer-events-none"
+                style={{ background: "linear-gradient(225deg, var(--color-surface) 55%, transparent 85%)" }}
+              />
               <div
                 className="calendly-inline-widget"
                 data-url="https://calendly.com/ignafb101/consultoria-digiai-clone-clone?hide_event_type_details=1"
-                style={{ minWidth: "280px", height: "460px" }}
+                style={{ minWidth: "280px", height: "540px" }}
               />
             </div>
 
