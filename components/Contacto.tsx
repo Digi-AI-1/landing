@@ -103,16 +103,15 @@ export default function Contacto() {
               Directo a tu problema.
             </p>
 
-            <div className="flex-1 rounded-lg overflow-hidden min-h-[400px]">
-              <div
-                className="calendly-inline-widget w-full h-full min-h-[400px]"
-                data-url="https://calendly.com/ignafb101/consultoria-digiai-clone?hide_gdpr_banner=1&background_color=070b14&text_color=ffffff&primary_color=4b93ff"
-              />
-              <Script
-                src="https://assets.calendly.com/assets/external/widget.js"
-                strategy="lazyOnload"
-              />
-            </div>
+            <div
+              className="calendly-inline-widget flex-1"
+              data-url="https://calendly.com/ignafb101/consultoria-digiai-clone-clone"
+              style={{ minWidth: "320px", height: "700px" }}
+            />
+            <Script
+              src="https://assets.calendly.com/assets/external/widget.js"
+              strategy="afterInteractive"
+            />
           </div>
         </div>
       </div>
