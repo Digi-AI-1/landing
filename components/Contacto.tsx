@@ -86,7 +86,7 @@ export default function Contacto() {
                 <button
                   type="submit"
                   disabled={state === "loading"}
-                  className="w-full py-3 rounded-lg bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold transition-colors"
+                  className="w-full py-3 rounded-lg bg-[var(--color-btn)] hover:bg-[var(--color-btn-hover)] disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold transition-colors"
                 >
                   {state === "loading" ? "Enviando..." : "Enviar Mensaje"}
                 </button>

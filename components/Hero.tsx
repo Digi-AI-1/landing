@@ -9,6 +9,7 @@ const scenarios = [
       { type: "check", text: "3 flujos de trabajo con alto potencial de automatización" },
       { type: "check", text: "23hs semanales recuperables en reporting manual" },
       { type: "check", text: "ROI proyectado: 2.4x en los primeros 6 meses" },
+      { type: "check", text: "Prioridad recomendada: digitalizar la cadena de despacho" },
     ],
   },
   {
@@ -17,6 +18,7 @@ const scenarios = [
       { type: "check", text: "Gestión de inventario con 34% de sobrestock eliminable" },
       { type: "check", text: "Atención al cliente automatizable en un 60%" },
       { type: "check", text: "Ahorro estimado: $850.000 ARS/mes en operaciones" },
+      { type: "check", text: "Oportunidad detectada: personalización de ofertas con IA predictiva" },
     ],
   },
   {
@@ -25,6 +27,7 @@ const scenarios = [
       { type: "check", text: "Carga de datos manual reemplazable con extracción automática" },
       { type: "check", text: "15hs semanales en tareas repetitivas de conciliación" },
       { type: "check", text: "Tiempo de cierre mensual reducible de 5 días a 1" },
+      { type: "check", text: "Quick win identificado: automatización de liquidaciones de IVA" },
     ],
   },
 ];
@@ -70,7 +73,7 @@ export default function Hero() {
     runAnimation();
     const interval = setInterval(() => {
       runAnimation();
-    }, 9000);
+    }, 10500);
     return () => clearInterval(interval);
   }, [runAnimation]);
 
@@ -127,7 +130,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <a
             href="#contacto"
-            className="px-8 py-4 rounded-lg bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-semibold text-lg transition-colors text-center"
+            className="px-8 py-4 rounded-lg bg-[var(--color-btn)] hover:bg-[var(--color-btn-hover)] text-white font-semibold text-lg transition-colors text-center"
           >
             Quiero un Diagnóstico
           </a>

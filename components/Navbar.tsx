@@ -13,7 +13,7 @@ export default function Navbar() {
         </nav>
         <a
           href="#contacto"
-          className="text-sm px-4 py-2 rounded-lg bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-medium transition-colors"
+          className="text-sm px-4 py-2 rounded-lg bg-[var(--color-btn)] hover:bg-[var(--color-btn-hover)] text-white font-medium transition-colors"
         >
           Hablemos
         </a>

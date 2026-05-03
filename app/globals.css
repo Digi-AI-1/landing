@@ -12,6 +12,10 @@
   --color-primary-hover: #4B93FF;
   --color-cyan:      #34D8F0;
 
+  /* Buttons */
+  --color-btn:       #2563EB;
+  --color-btn-hover: #1D4ED8;
+
   /* Text */
   --color-text:      #FFFFFF;
   --color-muted:     #B0B8C8;

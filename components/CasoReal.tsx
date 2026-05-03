@@ -7,7 +7,7 @@ const stats = [
 
 export default function CasoReal() {
   return (
-    <section className="py-24 px-6 bg-[var(--color-surface)]/50">
+    <section className="py-24 px-6 bg-[var(--color-surface)]/30">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block mb-4 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-sm font-medium">

@@ -37,7 +37,7 @@ export default function PorQueElegirnos() {
               key={r.titulo}
               className="flex gap-5 p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] card-glow"
             >
-              <span className="text-3xl shrink-0">{r.icon}</span>
+              <span className="text-3xl shrink-0 w-10 text-center">{r.icon}</span>
               <div>
                 <h3 className="text-white font-semibold text-lg mb-2">{r.titulo}</h3>
                 <p className="text-[var(--color-muted)] text-sm leading-relaxed">{r.descripcion}</p>
