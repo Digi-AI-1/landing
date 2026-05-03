@@ -1,3 +1,7 @@
+"use client";
+
+import { useInView } from "@/hooks/useInView";
+
 const insights = [
   {
     titulo: "El 90% de las 'Transformaciones Digitales' en Argentina Fracasan",
@@ -17,21 +21,34 @@ const insights = [
 ];
 
 export default function Tecnologia() {
+  const { ref, inView } = useInView(0.1);
+
   return (
     <section id="tecnologia" className="py-16 md:py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-10 md:mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">La Tecnología Cambió. ¿Y Tu Empresa?</h2>
+      <div ref={ref} className="max-w-6xl mx-auto">
+        <div
+          className={`text-center mb-10 md:mb-16 transition-all duration-700 ${
+            inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            La Tecnología Cambió. ¿Y Tu Empresa?
+          </h2>
           <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-3xl mx-auto">
-            Los modelos de IA que antes requerían equipos de 20 ingenieros hoy se implementan en semanas. Si tu operación todavía depende de planillas y procesos manuales, estás a tiempo de cambiar eso.
+            Los modelos de IA que antes requerían equipos de 20 ingenieros hoy se implementan en
+            semanas. Si tu operación todavía depende de planillas y procesos manuales, estás a
+            tiempo de cambiar eso.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {insights.map((insight) => (
+          {insights.map((insight, i) => (
             <div
               key={insight.titulo}
-              className="flex flex-col gap-4 p-5 md:p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] card-glow"
+              className={`flex flex-col gap-4 p-5 md:p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] card-glow transition-all duration-700 ${
+                inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
+              style={{ transitionDelay: inView ? `${100 + i * 100}ms` : "0ms" }}
             >
               <div className="h-1 w-12 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-cyan)] rounded-full" />
               <h3 className="text-white font-semibold text-xl">{insight.titulo}</h3>
