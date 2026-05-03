@@ -60,8 +60,8 @@ export default function Contacto() {
             }`}
             style={{ transitionDelay: inView ? "300ms" : "0ms" }}
           >
-            <h3 className="text-white font-semibold text-xl mb-2">Contanos Sobre Tu Empresa</h3>
-            <p className="text-[var(--color-muted)] text-sm mb-6">
+            <h3 className="text-white font-semibold text-2xl mb-2">Contanos Sobre Tu Empresa</h3>
+            <p className="text-[var(--color-muted)] text-base mb-6">
               Dejanos tu consulta y te respondemos en menos de 24hs hábiles.
             </p>
 
@@ -88,7 +88,7 @@ export default function Contacto() {
                   className="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-white placeholder:text-[var(--color-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors"
                 />
                 <div>
-                  <p className="text-[var(--color-muted)]/60 text-xs mb-1.5 px-1">
+                  <p className="text-[var(--color-muted)]/60 text-sm mb-1.5 px-1">
                     Contanos sobre tu Empresa y qué necesitás...
                   </p>
                   <textarea
@@ -122,8 +122,8 @@ export default function Contacto() {
             }`}
             style={{ transitionDelay: inView ? "450ms" : "0ms" }}
           >
-            <h3 className="text-white font-semibold text-xl mb-1">¿Listo Para Arrancar?</h3>
-            <p className="text-[var(--color-muted)] text-sm leading-relaxed mb-4">
+            <h3 className="text-white font-semibold text-2xl mb-1">¿Listo Para Arrancar?</h3>
+            <p className="text-[var(--color-muted)] text-base leading-relaxed mb-4">
               Agendá 20 minutos. Sin vueltas, directo a tu problema.
             </p>
 
