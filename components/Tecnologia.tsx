@@ -24,17 +24,7 @@ export default function Tecnologia() {
   const { ref, inView } = useInView(0.1);
 
   return (
-    <section id="tecnologia" className="relative overflow-hidden py-16 md:py-24 px-6">
-      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div
-          className="absolute -top-48 -right-48 w-[600px] h-[600px] rounded-full"
-          style={{ background: "radial-gradient(circle, rgba(91,160,255,0.12) 0%, rgba(91,160,255,0.04) 45%, transparent 70%)" }}
-        />
-        <div
-          className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full"
-          style={{ background: "radial-gradient(circle, rgba(52,216,240,0.09) 0%, rgba(52,216,240,0.03) 45%, transparent 70%)" }}
-        />
-      </div>
+    <section id="tecnologia" className="py-16 md:py-24 px-6">
       <div ref={ref} className="max-w-6xl mx-auto">
         <div
           className={`text-center mb-10 md:mb-16 transition-all duration-700 ease-out ${

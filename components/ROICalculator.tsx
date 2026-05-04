@@ -16,17 +16,7 @@ export default function ROICalculator() {
   const savingsPerYear = hoursPerYear * rate;
 
   return (
-    <section className="relative overflow-hidden py-16 md:py-24 px-6">
-      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div
-          className="absolute top-1/2 -right-56 -translate-y-1/2 w-[700px] h-[700px] rounded-full"
-          style={{ background: "radial-gradient(circle, rgba(91,160,255,0.10) 0%, rgba(91,160,255,0.03) 45%, transparent 70%)" }}
-        />
-        <div
-          className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full"
-          style={{ background: "radial-gradient(circle, rgba(52,216,240,0.08) 0%, rgba(52,216,240,0.02) 45%, transparent 70%)" }}
-        />
-      </div>
+    <section className="py-16 md:py-24 px-6">
       <div ref={ref} className="max-w-4xl mx-auto">
 
         {/* Header */}

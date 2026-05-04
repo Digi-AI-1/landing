@@ -33,17 +33,7 @@ export default function PorQueElegirnos() {
   const { ref, inView } = useInView(0.08);
 
   return (
-    <section id="por-que" className="relative overflow-hidden py-16 md:py-24 px-6">
-      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div
-          className="absolute -top-36 -right-36 w-[520px] h-[520px] rounded-full"
-          style={{ background: "radial-gradient(circle, rgba(91,160,255,0.10) 0%, rgba(91,160,255,0.03) 45%, transparent 70%)" }}
-        />
-        <div
-          className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full"
-          style={{ background: "radial-gradient(circle, rgba(52,216,240,0.08) 0%, rgba(52,216,240,0.02) 45%, transparent 70%)" }}
-        />
-      </div>
+    <section id="por-que" className="py-16 md:py-24 px-6">
       <div ref={ref} className="max-w-6xl mx-auto">
         <div
           className={`text-center mb-10 md:mb-16 transition-all duration-700 ease-out ${
