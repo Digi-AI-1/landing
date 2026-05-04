@@ -87,7 +87,13 @@ export default function CasoReal() {
   const roi = useCounter(2.1, 1, inView, 1100);
 
   return (
-    <section className="py-16 md:py-24 px-6">
+    <section className="relative py-16 md:py-24 px-6">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div className="absolute -top-64 -left-56 w-[750px] h-[750px] rounded-full"
+          style={{ background: "radial-gradient(circle, rgba(52,216,240,0.10) 0%, rgba(52,216,240,0.03) 45%, transparent 70%)" }} />
+        <div className="absolute -bottom-64 -right-56 w-[780px] h-[780px] rounded-full"
+          style={{ background: "radial-gradient(circle, rgba(91,160,255,0.12) 0%, rgba(91,160,255,0.04) 45%, transparent 70%)" }} />
+      </div>
       <div ref={ref} className="max-w-5xl mx-auto">
 
         <div
