@@ -50,6 +50,17 @@ html::-webkit-scrollbar {
   box-shadow: 0 0 20px rgba(91, 160, 255, 0.04), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+/* Terminal blinking cursor */
+@keyframes terminal-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+.terminal-cursor {
+  animation: terminal-blink 0.9s steps(1) infinite;
+  margin-left: 2px;
+  color: var(--color-primary);
+}
+
 /* Hero gradient orbs */
 @keyframes hero-orb-1 {
   0%, 100% { transform: translate(0,    0)    scale(1);    }

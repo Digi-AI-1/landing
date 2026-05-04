@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 const scenarios = [
   {
@@ -32,49 +32,54 @@ const scenarios = [
   },
 ];
 
+const CYCLE_MS = 14200;
+
 export default function Hero() {
   const [scenarioIndex, setScenarioIndex] = useState(0);
   const [visibleLines, setVisibleLines] = useState(0);
-  const [analyzing, setAnalyzing] = useState(true);
+  const [statusText, setStatusText] = useState<string | null>("Conectando con datos de la empresa...");
   const [fading, setFading] = useState(false);
+  const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
 
   const scenario = scenarios[scenarioIndex];
 
+  const schedule = useCallback((fn: () => void, ms: number) => {
+    timers.current.push(setTimeout(fn, ms));
+  }, []);
+
   const runAnimation = useCallback(() => {
-    setAnalyzing(true);
+    timers.current.forEach(clearTimeout);
+    timers.current = [];
+
+    setStatusText("Conectando con datos de la empresa...");
     setVisibleLines(0);
     setFading(false);
 
-    const analyzeTimer = setTimeout(() => {
-      setAnalyzing(false);
-      let line = 0;
-      const lineInterval = setInterval(() => {
-        line++;
-        setVisibleLines(line);
-        if (line >= scenarios[0].lines.length) {
-          clearInterval(lineInterval);
-          const fadeTimer = setTimeout(() => {
-            setFading(true);
-            const nextTimer = setTimeout(() => {
-              setScenarioIndex((prev) => (prev + 1) % scenarios.length);
-            }, 600);
-            return () => clearTimeout(nextTimer);
-          }, 3000);
-          return () => clearTimeout(fadeTimer);
-        }
-      }, 800);
-      return () => clearInterval(lineInterval);
-    }, 1500);
+    schedule(() => setStatusText("Mapeando procesos operativos..."), 1400);
+    schedule(() => setStatusText("Analizando oportunidades de automatización..."), 3000);
+    schedule(() => setStatusText("Generando diagnóstico..."), 4600);
 
-    return () => clearTimeout(analyzeTimer);
-  }, []);
+    const analysisEnd = 5800;
+    schedule(() => setStatusText(null), analysisEnd);
+
+    const lineDelays = [600, 1200, 900, 1400];
+    let t = analysisEnd;
+    lineDelays.forEach((d, i) => {
+      t += d;
+      schedule(() => setVisibleLines(i + 1), t);
+    });
+
+    schedule(() => setFading(true), t + 3500);
+    schedule(() => setScenarioIndex((prev) => (prev + 1) % scenarios.length), t + 4100);
+  }, [schedule]);
 
   useEffect(() => {
     runAnimation();
-    const interval = setInterval(() => {
-      runAnimation();
-    }, 10500);
-    return () => clearInterval(interval);
+    const interval = setInterval(runAnimation, CYCLE_MS);
+    return () => {
+      clearInterval(interval);
+      timers.current.forEach(clearTimeout);
+    };
   }, [runAnimation]);
 
   return (
@@ -82,7 +87,6 @@ export default function Hero() {
 
       {/* Gradient orbs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        {/* Primary orb — top-right, slow drift */}
         <div
           className="absolute -top-64 -right-64 w-[900px] h-[900px] rounded-full"
           style={{
@@ -90,7 +94,6 @@ export default function Hero() {
             animation: "hero-orb-1 24s ease-in-out infinite",
           }}
         />
-        {/* Cyan orb — bottom-left, different speed */}
         <div
           className="absolute -bottom-64 -left-64 w-[800px] h-[800px] rounded-full"
           style={{
@@ -98,7 +101,6 @@ export default function Hero() {
             animation: "hero-orb-2 30s ease-in-out infinite",
           }}
         />
-        {/* Faint center glow behind headline */}
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px] rounded-full"
           style={{
@@ -132,9 +134,10 @@ export default function Hero() {
             <span className="text-[var(--color-muted)]">&gt; Industria:</span> {scenario.industry}
           </div>
 
-          {analyzing ? (
-            <div className="text-[var(--color-muted)] animate-pulse">
-              &gt; Analizando procesos...
+          {statusText ? (
+            <div className="text-[var(--color-muted)]">
+              &gt; {statusText}
+              <span className="terminal-cursor">▌</span>
             </div>
           ) : (
             <div className="flex flex-col gap-2">
