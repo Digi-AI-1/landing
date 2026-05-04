@@ -31,9 +31,13 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Smooth scroll */
+/* Smooth scroll + hide scrollbar */
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 
 /* Clip horizontal orb bleed without creating a scroll container */
