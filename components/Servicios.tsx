@@ -45,7 +45,17 @@ export default function Servicios() {
   const { ref, inView } = useInView(0.08);
 
   return (
-    <section id="servicios" className="py-16 md:py-24 px-6">
+    <section id="servicios" className="relative overflow-hidden py-16 md:py-24 px-6">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div
+          className="absolute -top-52 -left-52 w-[700px] h-[700px] rounded-full"
+          style={{ background: "radial-gradient(circle, rgba(91,160,255,0.10) 0%, rgba(91,160,255,0.03) 45%, transparent 70%)" }}
+        />
+        <div
+          className="absolute -bottom-44 -right-44 w-[550px] h-[550px] rounded-full"
+          style={{ background: "radial-gradient(circle, rgba(52,216,240,0.08) 0%, rgba(52,216,240,0.02) 45%, transparent 70%)" }}
+        />
+      </div>
       <div ref={ref} className="max-w-6xl mx-auto">
         <div
           className={`text-center mb-10 md:mb-16 transition-all duration-700 ease-out ${
