@@ -79,7 +79,7 @@ export default function Hero() {
   }, [runAnimation]);
 
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center justify-center pt-16 px-6">
+    <section className="relative overflow-hidden min-h-screen flex items-center justify-center pt-16 pb-20 px-6">
 
       {/* Gradient orbs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
@@ -133,22 +133,23 @@ export default function Hero() {
             <span className="text-[var(--color-muted)]">&gt; Industria:</span> {scenario.industry}
           </div>
 
-          <div className="relative">
+          {analyzing ? (
+            <div className="text-[var(--color-muted)] animate-pulse">
+              &gt; Analizando procesos...
+            </div>
+          ) : (
             <div className="flex flex-col gap-2">
               {scenario.lines.map((line, i) => (
                 <div
                   key={i}
-                  className={`transition-all duration-500 ${!analyzing && i < visibleLines ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}
+                  className={`transition-all duration-500 ${i < visibleLines ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}
                 >
                   <span className="text-green-400">✓</span>{" "}
                   <span className="text-[var(--color-text)]">{line.text}</span>
                 </div>
               ))}
             </div>
-            <div className={`absolute top-0 left-0 text-[var(--color-muted)] transition-opacity duration-300 ${analyzing ? "opacity-100 animate-pulse" : "opacity-0"}`}>
-              &gt; Analizando procesos...
-            </div>
-          </div>
+          )}
         </div>
 
         <p className="text-center text-[var(--color-muted)] mt-8 text-sm sm:text-lg max-w-xl mx-auto">
