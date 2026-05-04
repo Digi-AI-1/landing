@@ -34,12 +34,18 @@ const scenarios = [
 
 const CYCLE_MS = 14200;
 
+const H1_L1 = "Transformá tu empresa";
+const H1_L2W = "con ";
+const H1_L2P = "inteligencia digital";
+const H1_TOTAL = H1_L1.length + H1_L2W.length + H1_L2P.length;
+
 export default function Hero() {
   const [scenarioIndex, setScenarioIndex] = useState(0);
   const [visibleLines, setVisibleLines] = useState(0);
   const [statusText, setStatusText] = useState<string | null>("Conectando con datos de la empresa...");
   const [fading, setFading] = useState(false);
   const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
+  const [charIdx, setCharIdx] = useState(0);
 
   const scenario = scenarios[scenarioIndex];
 
@@ -72,6 +78,12 @@ export default function Hero() {
     schedule(() => setFading(true), t + 3500);
     schedule(() => setScenarioIndex((prev) => (prev + 1) % scenarios.length), t + 4100);
   }, [schedule]);
+
+  useEffect(() => {
+    if (charIdx >= H1_TOTAL) return;
+    const t = setTimeout(() => setCharIdx(charIdx + 1), 55);
+    return () => clearTimeout(t);
+  }, [charIdx]);
 
   useEffect(() => {
     runAnimation();
@@ -114,9 +126,26 @@ export default function Hero() {
           <div className="inline-block mb-6 px-3 py-1 rounded-full border border-[var(--color-cyan)]/30 bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] text-xs sm:text-sm font-medium">
             Consultoría Digital Especializada para Empresas Argentinas
           </div>
-          <h1 className="text-2xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight uppercase tracking-tight">
-            Transformá tu empresa<br />
-            con <span className="text-[var(--color-primary)]">inteligencia digital</span>
+          <h1 className="relative text-2xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight uppercase tracking-tight">
+            <span className="invisible" aria-hidden="true">
+              Transformá tu empresa<br />
+              con inteligencia digital
+            </span>
+            <span className="absolute inset-0">
+              {H1_L1.slice(0, Math.min(charIdx, H1_L1.length))}
+              {charIdx > H1_L1.length && (
+                <>
+                  <br />
+                  {H1_L2W.slice(0, Math.min(charIdx - H1_L1.length, H1_L2W.length))}
+                  {charIdx > H1_L1.length + H1_L2W.length && (
+                    <span className="text-[var(--color-primary)]">
+                      {H1_L2P.slice(0, charIdx - H1_L1.length - H1_L2W.length)}
+                    </span>
+                  )}
+                </>
+              )}
+              {charIdx < H1_TOTAL && <span className="terminal-cursor">▌</span>}
+            </span>
           </h1>
         </div>
 

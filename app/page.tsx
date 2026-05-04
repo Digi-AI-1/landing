@@ -3,6 +3,7 @@ import MetricsTicker from "@/components/MetricsTicker";
 import Tecnologia from "@/components/Tecnologia";
 import CasoReal from "@/components/CasoReal";
 import ROICalculator from "@/components/ROICalculator";
+import Proceso from "@/components/Proceso";
 import Servicios from "@/components/Servicios";
 import Nosotros from "@/components/Nosotros";
 import PorQueElegirnos from "@/components/PorQueElegirnos";
@@ -23,6 +24,7 @@ export default function Home() {
         <Tecnologia />
         <CasoReal />
         <ROICalculator />
+        <Proceso />
         <Servicios />
         <Nosotros />
         <PorQueElegirnos />

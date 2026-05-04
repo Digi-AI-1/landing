@@ -1,6 +1,7 @@
 "use client";
 
 import { useInView } from "@/hooks/useInView";
+import GlowCard from "@/components/GlowCard";
 
 const razones = [
   {
@@ -62,13 +63,13 @@ export default function PorQueElegirnos() {
               }`}
               style={{ transitionDelay: inView ? `${300 + i * 150}ms` : "0ms" }}
             >
-              <div className="flex gap-5 p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-primary)]/40 transition-colors card-glow h-full">
+              <GlowCard className="flex gap-5 p-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-primary)]/40 transition-colors card-glow h-full">
                 <span className="text-3xl shrink-0 w-10 text-center">{r.icon}</span>
                 <div>
                   <h3 className="text-white font-semibold text-lg mb-2">{r.titulo}</h3>
                   <p className="text-[var(--color-muted)] text-sm leading-relaxed">{r.descripcion}</p>
                 </div>
-              </div>
+              </GlowCard>
             </div>
           ))}
         </div>
