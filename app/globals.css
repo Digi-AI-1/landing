@@ -29,13 +29,16 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
-  overflow-x: hidden;
 }
 
-/* Smooth scroll + prevent horizontal overflow from orbs */
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+}
+
+/* Clip horizontal orb bleed without creating a scroll container */
+.orb-section {
+  overflow-x: clip;
 }
 
 /* Box glow for cards */

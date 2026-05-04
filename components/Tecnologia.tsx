@@ -24,7 +24,7 @@ export default function Tecnologia() {
   const { ref, inView } = useInView(0.1);
 
   return (
-    <section id="tecnologia" className="relative py-16 md:py-24 px-6">
+    <section id="tecnologia" className="relative py-16 md:py-24 px-6 orb-section">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute -top-64 -right-56 w-[800px] h-[800px] rounded-full"
           style={{ background: "radial-gradient(circle, rgba(91,160,255,0.13) 0%, rgba(91,160,255,0.04) 45%, transparent 70%)" }} />

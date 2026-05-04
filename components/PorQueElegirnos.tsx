@@ -33,7 +33,7 @@ export default function PorQueElegirnos() {
   const { ref, inView } = useInView(0.08);
 
   return (
-    <section id="por-que" className="relative py-16 md:py-24 px-6">
+    <section id="por-que" className="relative py-16 md:py-24 px-6 orb-section">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute -top-64 -left-56 w-[760px] h-[760px] rounded-full"
           style={{ background: "radial-gradient(circle, rgba(52,216,240,0.10) 0%, rgba(52,216,240,0.03) 45%, transparent 70%)" }} />

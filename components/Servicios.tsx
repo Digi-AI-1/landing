@@ -45,7 +45,7 @@ export default function Servicios() {
   const { ref, inView } = useInView(0.08);
 
   return (
-    <section id="servicios" className="relative py-16 md:py-24 px-6">
+    <section id="servicios" className="relative py-16 md:py-24 px-6 orb-section">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute -top-64 -left-56 w-[740px] h-[740px] rounded-full"
           style={{ background: "radial-gradient(circle, rgba(52,216,240,0.09) 0%, rgba(52,216,240,0.03) 45%, transparent 70%)" }} />

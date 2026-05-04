@@ -34,7 +34,7 @@ export default function Contacto() {
   }
 
   return (
-    <section id="contacto" className="relative py-16 md:py-24 px-6">
+    <section id="contacto" className="relative py-16 md:py-24 px-6 orb-section">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute -top-64 -right-56 w-[760px] h-[760px] rounded-full"
           style={{ background: "radial-gradient(circle, rgba(91,160,255,0.12) 0%, rgba(91,160,255,0.04) 45%, transparent 70%)" }} />
