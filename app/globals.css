@@ -32,9 +32,10 @@ body {
   overflow-x: hidden;
 }
 
-/* Smooth scroll */
+/* Smooth scroll + prevent horizontal overflow from orbs */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Box glow for cards */
