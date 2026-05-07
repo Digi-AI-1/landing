@@ -46,7 +46,7 @@ export default function ROICalculator() {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
             ¿Cuánto Te Cuesta No Automatizar?
           </h2>
-          <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-2xl mx-auto">
+          <p className="text-[var(--color-muted)] text-sm sm:text-lg mx-auto">
             Mové los valores, tocá Calcular, y mirá lo que tu empresa pierde cada año en tareas que una máquina hace mejor.
           </p>
         </div>

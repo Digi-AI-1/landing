@@ -20,7 +20,7 @@ export default function Proceso() {
           }`}
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Cómo Funciona</h2>
-          <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-2xl mx-auto">
+          <p className="text-[var(--color-muted)] text-sm sm:text-lg mx-auto">
             Sin vueltas. Sin meses de descubrimiento. Del diagnóstico al primer resultado medible en semanas.
           </p>
         </div>
