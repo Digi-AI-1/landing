@@ -12,10 +12,16 @@ export default function ROICalculator() {
   const [hours, setHours] = useState(12);
   const [rate, setRate] = useState(5000);
   const [result, setResult] = useState<{ hours: number; savings: number } | null>(null);
+  const [calculating, setCalculating] = useState(false);
 
   function calculate() {
-    const h = Math.round(hours * 0.7 * 52);
-    setResult({ hours: h, savings: h * rate });
+    setCalculating(true);
+    setResult(null);
+    setTimeout(() => {
+      const h = Math.round(hours * 0.7 * 52);
+      setResult({ hours: h, savings: h * rate });
+      setCalculating(false);
+    }, 1200);
   }
 
   return (
@@ -117,7 +123,12 @@ export default function ROICalculator() {
 
             {/* Outputs */}
             <div className="flex flex-col gap-4 justify-center">
-              {result ? (
+              {calculating ? (
+                <div className="flex flex-col items-center justify-center h-full gap-3">
+                  <div className="w-10 h-10 border-3 border-[var(--color-primary)]/20 border-t-[var(--color-primary)] rounded-full animate-spin" />
+                  <p className="text-[var(--color-muted)] text-sm">Calculando...</p>
+                </div>
+              ) : result ? (
                 <>
                   <div className="p-5 rounded-xl bg-[var(--color-bg)] border border-[var(--color-border)]">
                     <div className="text-[var(--color-muted)] text-sm mb-2">Horas recuperables por año</div>
