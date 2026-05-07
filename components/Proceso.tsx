@@ -13,7 +13,7 @@ export default function Proceso() {
 
   return (
     <section className="py-16 md:py-24 px-6">
-      <div ref={ref} className="max-w-4xl mx-auto">
+      <div ref={ref} className="max-w-6xl mx-auto">
         <div
           className={`text-center mb-12 md:mb-16 transition-all duration-700 ease-out ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
