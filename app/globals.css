@@ -80,8 +80,14 @@ html::-webkit-scrollbar {
 }
 
 .ticker-track {
-  animation: ticker 38s linear infinite;
+  animation: ticker 18s linear infinite;
   will-change: transform;
+}
+
+@media (min-width: 640px) {
+  .ticker-track {
+    animation-duration: 38s;
+  }
 }
 
 .ticker-track:hover {

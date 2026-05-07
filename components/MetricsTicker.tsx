@@ -19,7 +19,7 @@ export default function MetricsTicker() {
     >
       <div className="ticker-track flex whitespace-nowrap">
         {items.map((m, i) => (
-          <span key={i} className="inline-flex items-center gap-2 px-5 text-sm">
+          <span key={i} className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-5 text-xs sm:text-sm">
             <span className="text-[var(--color-primary)] font-bold font-mono">{m.value}</span>
             <span className="text-[var(--color-muted)]">{m.label}</span>
             <span className="text-[var(--color-border)] text-xs ml-3">◆</span>

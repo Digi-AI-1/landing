@@ -66,8 +66,8 @@ export default function Contacto() {
             }`}
             style={{ transitionDelay: inView ? "300ms" : "0ms" }}
           >
-            <h3 className="text-white font-semibold text-2xl mb-2">Contanos Sobre Tu Empresa</h3>
-            <p className="text-[var(--color-muted)] text-base mb-6">
+            <h3 className="text-white font-semibold text-xl sm:text-2xl mb-2">Contanos Sobre Tu Empresa</h3>
+            <p className="text-[var(--color-muted)] text-sm sm:text-base mb-6">
               Dejanos tu consulta y te respondemos en menos de 24hs hábiles.
             </p>
 
@@ -128,17 +128,17 @@ export default function Contacto() {
             }`}
             style={{ transitionDelay: inView ? "450ms" : "0ms" }}
           >
-            <h3 className="text-white font-semibold text-2xl mb-1">¿Listo Para Arrancar?</h3>
-            <p className="text-[var(--color-muted)] text-base leading-relaxed mb-4">
+            <h3 className="text-white font-semibold text-xl sm:text-2xl mb-1">¿Listo Para Arrancar?</h3>
+            <p className="text-[var(--color-muted)] text-sm sm:text-base leading-relaxed mb-4">
               Agendá 20 minutos. Sin vueltas, directo a tu problema.
             </p>
 
-            <div className="rounded-xl overflow-hidden border border-[var(--color-border)] h-[540px]">
-              <div style={{ marginRight: "-15px", height: "540px" }}>
+            <div className="rounded-xl overflow-hidden border border-[var(--color-border)] h-[420px] sm:h-[540px]">
+              <div style={{ marginRight: "-15px" }} className="h-full">
                 <div
-                  className="calendly-inline-widget"
+                  className="calendly-inline-widget h-full"
                   data-url="https://calendly.com/ignafb101/consultoria-digiai-clone-clone?hide_event_type_details=1"
-                  style={{ minWidth: "280px", height: "540px" }}
+                  style={{ minWidth: "280px" }}
                 />
               </div>
             </div>

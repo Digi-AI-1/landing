@@ -183,20 +183,20 @@ export default function Hero() {
           )}
         </div>
 
-        <p className="text-center text-[var(--color-muted)] mt-8 text-sm sm:text-lg max-w-xl mx-auto">
+        <p className="text-center text-[var(--color-muted)] mt-6 sm:mt-8 text-xs sm:text-lg max-w-xl mx-auto">
           Esto no es un video. Es lo que hacemos. Pero con <span className="text-white font-medium">tus datos</span>.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-6 sm:mt-8">
           <a
             href="#contacto"
-            className="px-8 py-4 rounded-lg bg-[var(--color-btn)] hover:bg-[var(--color-btn-hover)] text-white font-semibold text-lg transition-colors text-center"
+            className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg bg-[var(--color-btn)] hover:bg-[var(--color-btn-hover)] text-white font-semibold text-base sm:text-lg transition-colors text-center"
           >
             Quiero un Diagnóstico
           </a>
           <a
             href="#tecnologia"
-            className="px-8 py-4 rounded-lg border border-[var(--color-border)] hover:border-[var(--color-primary)]/50 text-white font-semibold text-lg transition-colors text-center"
+            className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg border border-[var(--color-border)] hover:border-[var(--color-primary)]/50 text-white font-semibold text-base sm:text-lg transition-colors text-center"
           >
             Cómo Funciona
           </a>
