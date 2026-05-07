@@ -1,9 +1,10 @@
 "use client";
 
+import React from "react";
 import { useInView } from "@/hooks/useInView";
 
-const steps = [
-  { n: "01", title: "Diagnóstico", desc: "Entramos, mapeamos, y en 48hs tenés un informe con los 3 procesos que más te cuestan." },
+const steps: { n: string; title: string; desc: React.ReactNode }[] = [
+  { n: "01", title: "Diagnóstico", desc: <>Entramos, mapeamos,<br />y en 48hs tenés un informe con los 3 procesos que más te cuestan.</> },
   { n: "02", title: "Implementación", desc: "Arrancamos por el quick win de mayor impacto. Primer entregable en 2 semanas." },
   { n: "03", title: "Resultados", desc: "No declaramos victoria. La medimos. Horas recuperadas, costos reducidos, ROI claro." },
 ];
