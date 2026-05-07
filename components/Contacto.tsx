@@ -8,11 +8,13 @@ type FormState = "idle" | "loading" | "success" | "error";
 
 export default function Contacto() {
   const [state, setState] = useState<FormState>("idle");
+  const [errorDetail, setErrorDetail] = useState<string>("");
   const { ref, inView } = useInView(0.08);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setState("loading");
+    setErrorDetail("");
 
     const formData = new FormData(e.currentTarget);
     const body = {
@@ -27,8 +29,16 @@ export default function Contacto() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
-      setState(res.ok ? "success" : "error");
-    } catch {
+      const data = await res.json();
+      if (res.ok) {
+        setState("success");
+      } else {
+        console.error("Contact error:", data);
+        setErrorDetail(data.detail || data.error || "");
+        setState("error");
+      }
+    } catch (err) {
+      console.error("Contact fetch error:", err);
       setState("error");
     }
   }
@@ -108,6 +118,7 @@ export default function Contacto() {
                 {state === "error" && (
                   <p className="text-red-400 text-sm text-center">
                     Algo salió mal. Intentá de nuevo.
+                    {errorDetail && <span className="block text-xs mt-1 opacity-70">{errorDetail}</span>}
                   </p>
                 )}
                 <button
