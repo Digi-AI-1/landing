@@ -32,7 +32,7 @@ export default function ROICalculator() {
         <div className="absolute -bottom-64 -left-56 w-[740px] h-[740px] rounded-full"
           style={{ background: "radial-gradient(circle, rgba(52,216,240,0.09) 0%, rgba(52,216,240,0.03) 45%, transparent 70%)" }} />
       </div>
-      <div ref={ref} className="max-w-4xl mx-auto">
+      <div ref={ref} className="max-w-5xl mx-auto">
 
         {/* Header */}
         <div
