@@ -67,7 +67,7 @@ export default function PorQueElegirnos() {
                 <span className="text-3xl shrink-0 w-10 text-center">{r.icon}</span>
                 <div>
                   <h3 className="text-white font-semibold text-lg mb-2">{r.titulo}</h3>
-                  <p className="text-[var(--color-muted)] text-sm leading-relaxed">{r.descripcion}</p>
+                  <p className="text-[var(--color-muted)] text-sm sm:text-base leading-relaxed">{r.descripcion}</p>
                 </div>
               </GlowCard>
             </div>

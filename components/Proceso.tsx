@@ -48,7 +48,7 @@ export default function Proceso() {
                 <span className="text-[var(--color-primary)] font-bold font-mono text-sm">{step.n}</span>
               </div>
               <h3 className="text-white font-semibold text-lg mb-2">{step.title}</h3>
-              <p className="text-[var(--color-muted)] text-sm leading-relaxed max-w-xs mx-auto">{step.desc}</p>
+              <p className="text-[var(--color-muted)] text-sm sm:text-base leading-relaxed max-w-xs mx-auto">{step.desc}</p>
             </div>
           ))}
         </div>
