@@ -3,7 +3,7 @@
 import { useInView } from "@/hooks/useInView";
 
 const steps = [
-  { n: "01", title: "Diagnóstico", desc: "En 48hs tenés un informe con los 3 procesos que más te cuestan." },
+  { n: "01", title: "Diagnóstico", desc: "Entramos, mapeamos, y en 48hs tenés un informe con los 3 procesos que más te cuestan." },
   { n: "02", title: "Implementación", desc: "Arrancamos por el quick win de mayor impacto. Primer entregable en 2 semanas." },
   { n: "03", title: "Resultados", desc: "No declaramos victoria. La medimos. Horas recuperadas, costos reducidos, ROI claro." },
 ];
@@ -48,7 +48,7 @@ export default function Proceso() {
                 <span className="text-[var(--color-primary)] font-bold font-mono text-sm">{step.n}</span>
               </div>
               <h3 className="text-white font-semibold text-lg mb-2">{step.title}</h3>
-              <p className="text-[var(--color-muted)] text-sm sm:text-base leading-relaxed max-w-xs mx-auto">{step.desc}</p>
+              <p className="text-[var(--color-muted)] text-sm sm:text-base leading-relaxed max-w-sm mx-auto">{step.desc}</p>
             </div>
           ))}
         </div>
