@@ -8,25 +8,25 @@ const razones = [
     icon: "🎯",
     titulo: "Ejecutamos, No Presentamos",
     descripcion:
-      "No vas a ver un PowerPoint de 80 slides. Hacemos un diagnóstico en 48hs, te mostramos los números, y si tiene sentido arrancamos. Si no aplica, te lo decimos con honestidad.",
+      "No vas a ver un PowerPoint de 80 slides. En 48hs tenés un diagnóstico con números, prioridades y un plan de acción. Si el proyecto no tiene sentido, te lo decimos y no te cobramos el diagnóstico.",
   },
   {
     icon: "🧠",
     titulo: "Experiencia Senior, No Intermediarios",
     descripcion:
-      "Los que te hacen el diagnóstico son los mismos que implementan. No hay un comercial que te vende y después te pasa a un equipo junior que recién arranca.",
+      "Los que te hacen el diagnóstico son los mismos que implementan. No hay un comercial que te vende y un equipo junior que ejecuta. Hablás con quien decide y con quien construye.",
   },
   {
     icon: "🇦🇷",
     titulo: "Hechos Para el Mercado Argentino",
     descripcion:
-      "Entendemos facturación en pesos, proveedores locales, regulaciones que cambian cada trimestre y equipos que necesitan hacer mucho con poco. No aplicamos frameworks importados que acá no funcionan.",
+      "Facturación en pesos, proveedores locales, regulaciones que cambian cada trimestre, y equipos que hacen mucho con poco. Conocemos las restricciones porque las vivimos. No importamos frameworks, los adaptamos.",
   },
   {
     icon: "⚡",
     titulo: "Velocidad Real",
     descripcion:
-      'Primer diagnóstico en 48hs. Primer entregable en 2 semanas. No tenemos 6 meses de "descubrimiento." Si sabemos qué hay que hacer, lo hacemos.',
+      "Primer diagnóstico en 48hs. Primer entregable en 2 semanas. Implementación completa en 6. No tenemos fase de 'descubrimiento' de 3 meses. Si sabemos qué hay que hacer, arrancamos.",
   },
 ];
 
@@ -49,8 +49,8 @@ export default function PorQueElegirnos() {
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">¿Por Qué Elegirnos?</h2>
           <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-2xl mx-auto">
-            Implementar tecnología sin entender el negocio es el error más caro que puede cometer
-            una empresa. Nosotros empezamos por entender el tuyo.
+            No somos una software factory que busca proyectos largos. Somos consultores que
+            resuelven problemas rápido y se pagan solos.
           </p>
         </div>
 

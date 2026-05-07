@@ -3,10 +3,10 @@
 import { useInView } from "@/hooks/useInView";
 
 const creencias = [
-  { n: "01", texto: "El problema siempre viene antes que la solución" },
-  { n: "02", texto: "Un entregable en 2 semanas vale más que un roadmap de 6 meses" },
-  { n: "03", texto: "Los datos que ya tenés son el punto de partida" },
-  { n: "04", texto: "La tecnología no transforma empresas. Las personas con criterio, sí" },
+  { n: "01", texto: "Primero el problema. Después, y solo si aplica, la tecnología." },
+  { n: "02", texto: "Un entregable en 2 semanas vale más que un roadmap de 6 meses." },
+  { n: "03", texto: "Tus datos ya son el activo más valioso que no estás usando." },
+  { n: "04", texto: "La tecnología no transforma empresas. Las personas con criterio y contexto, sí." },
 ];
 
 export default function Nosotros() {
@@ -42,15 +42,15 @@ export default function Nosotros() {
           style={{ transitionDelay: inView ? "200ms" : "0ms" }}
         >
           <p className="text-white text-base sm:text-xl md:text-2xl leading-relaxed font-light mb-6">
-            La mayoría de los proyectos de transformación digital fallan antes de empezar. No por
-            la tecnología — por cómo se plantean. Se vende una solución antes de entender el
-            problema. Se implementa una herramienta antes de mapear el proceso. El cliente termina
-            con un sistema caro que nadie usa.
+            La mayoría de los proyectos de transformación digital en Argentina fallan. No por la
+            tecnología, por cómo se plantean. Se vende una solución antes de entender el problema.
+            Se implementa una herramienta antes de mapear el proceso. El resultado: un sistema
+            caro que nadie usa y un equipo que desconfía de la próxima propuesta.
           </p>
           <p className="text-[var(--color-muted)] text-sm sm:text-lg leading-relaxed">
-            Nuestro punto de partida siempre es el mismo: entender cómo funciona tu negocio antes
-            de tocar una sola línea de código. Porque la IA más sofisticada del mundo, aplicada al
-            problema equivocado, es solo un gasto.
+            Nuestro punto de partida es siempre el mismo: tu operación. No tocamos una línea de
+            código hasta entender cómo funciona tu negocio. Porque la IA más avanzada del mundo,
+            aplicada al problema equivocado, es solo un gasto más.
           </p>
         </div>
 

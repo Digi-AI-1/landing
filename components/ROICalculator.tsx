@@ -44,10 +44,10 @@ export default function ROICalculator() {
             Calculadora de ROI
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-            ¿Cuánto Vale Tu Tiempo?
+            ¿Cuánto Te Cuesta No Automatizar?
           </h2>
           <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-2xl mx-auto">
-            Estimá en segundos qué significa la automatización en pesos reales para tu equipo.
+            Mové los valores, tocá Calcular, y mirá lo que tu empresa pierde cada año en tareas que una máquina hace mejor.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default function ROICalculator() {
               </button>
 
               <p className="text-[var(--color-muted)] text-xs leading-relaxed">
-                Estimación basada en que el 70% de las tareas manuales repetibles son automatizables en un plazo de 6 semanas.
+                Estimación conservadora: 70% de automatización de tareas repetitivas. Resultados reales suelen superar la proyección.
               </p>
             </div>
 
@@ -168,7 +168,7 @@ export default function ROICalculator() {
           {/* CTA row */}
           <div className="mt-8 pt-6 border-t border-[var(--color-border)] flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-[var(--color-muted)] text-sm text-center sm:text-left">
-              ¿Querés ver estos números con los datos reales de tu empresa?
+              Estos números son genéricos. Los reales, con tus datos, suelen ser más altos.
             </p>
             <a
               href="#contacto"

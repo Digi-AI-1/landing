@@ -8,37 +8,37 @@ const servicios = [
     icon: "⚡",
     titulo: "Diagnóstico y Rediseño de Procesos",
     descripcion:
-      "Entramos, mapeamos cómo opera tu empresa, y te mostramos exactamente dónde estás perdiendo tiempo y plata. Sin supuestos. Con datos. En 48hs tenés un plan accionable.",
+      "Entramos, mapeamos, y en 48hs te mostramos exactamente dónde se te van horas y plata. Sin supuestos, con datos. El resultado: un plan accionable con prioridades claras y ROI estimado por iniciativa.",
   },
   {
     icon: "🤖",
     titulo: "Implementación de IA Aplicada",
     descripcion:
-      "Identificamos las 2 o 3 tareas de tu operación donde un modelo entrenado genera impacto real y lo implementamos hasta que funcione sin nosotros. Nada de pilotos eternos.",
+      "Identificamos las 2 o 3 tareas donde un modelo entrenado genera impacto real y lo implementamos hasta que funcione sin nosotros. Sin pilotos eternos. Sin dependencia. Resultados medibles en semanas.",
   },
   {
     icon: "📊",
     titulo: "Inteligencia de Negocios",
     descripcion:
-      "Tus datos ya existen. El problema es que están en 5 planillas distintas y nadie los cruza. Construimos dashboards que te muestran qué está pasando y qué decisión tomar.",
+      "Tus datos ya existen. El problema es que viven en 5 planillas que nadie cruza. Construimos dashboards en tiempo real que te muestran qué está pasando, qué va a pasar, y qué decisión tomar antes de que sea tarde.",
   },
   {
     icon: "🌐",
     titulo: "Plataformas Digitales",
     descripcion:
-      'Sitios, apps y sistemas internos. No hacemos "páginas bonitas." Hacemos plataformas que convierten, retienen y escalan. Cada funcionalidad tiene un motivo de negocio detrás.',
+      "Sitios, apps y sistemas internos que no son 'páginas bonitas'. Son plataformas que convierten, retienen y escalan. Cada funcionalidad tiene un KPI de negocio detrás, o no se construye.",
   },
   {
     icon: "🛒",
     titulo: "E-Commerce de Alto Rendimiento",
     descripcion:
-      "Tiendas que venden, no que existen. Medios de pago argentinos integrados, logística automatizada, y métricas que te dicen por qué compraron y por qué no.",
+      "Tiendas que venden, no que existen. Mercado Pago y medios locales integrados, logística automatizada, y un tablero que te dice por qué compraron y por qué abandonaron el carrito.",
   },
   {
     icon: "📈",
     titulo: "Crecimiento y Adquisición Digital",
     descripcion:
-      'Campañas donde cada peso se rastrea de punta a punta. No manejamos "redes sociales." Diseñamos máquinas de generación de demanda con ROI medible.',
+      "Campañas donde cada peso se rastrea de punta a punta. No 'manejamos redes.' Diseñamos máquinas de generación de demanda con atribución real y ROI medible antes de escalar.",
   },
 ];
 
@@ -61,8 +61,8 @@ export default function Servicios() {
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Nuestros Servicios</h2>
           <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-3xl mx-auto">
-            Desde automatización de procesos con IA hasta plataformas que convierten datos en
-            decisiones. Tu negocio funciona — ahora imaginalo funcionando con inteligencia.
+            Cada servicio arranca con un problema de negocio. No vendemos tecnología: vendemos
+            horas recuperadas, errores eliminados y decisiones más rápidas.
           </p>
         </div>
 

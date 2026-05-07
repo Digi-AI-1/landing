@@ -84,7 +84,7 @@ export default function CasoReal() {
 
   const pct = useCounter(73, 0, inView, 700);
   const semanas = useCounter(6, 0, inView, 900);
-  const roi = useCounter(2.1, 1, inView, 1100);
+  const roi = useCounter(2.4, 1, inView, 1100);
 
   return (
     <section className="relative py-16 md:py-24 px-6 orb-section">
@@ -108,8 +108,8 @@ export default function CasoReal() {
             De 12 Horas de Reportes a 4 Minutos
           </h2>
           <p className="text-[var(--color-muted)] text-lg max-w-3xl mx-auto">
-            Un pipeline de datos, un modelo predictivo y 6 semanas de trabajo. Esto es lo que pasa
-            cuando la IA se aplica al problema correcto.
+            Un pipeline de datos, un modelo predictivo y 6 semanas. Esto es lo que pasa
+            cuando la IA se aplica al problema correcto, no al más llamativo.
           </p>
         </div>
 
@@ -133,8 +133,8 @@ export default function CasoReal() {
                 Problema
               </div>
               <p className="text-[var(--color-muted)]">
-                12 horas semanales en reportes manuales, errores frecuentes de stock, decisiones
-                basadas en intuición en vez de datos.
+                12 horas semanales perdidas en reportes manuales. Errores de stock recurrentes
+                en temporada alta. Decisiones de compra basadas en intuición, no en datos.
               </p>
             </div>
           </div>
@@ -154,8 +154,8 @@ export default function CasoReal() {
                 Impacto
               </div>
               <p className="text-[var(--color-muted)]">
-                Equipo reasignado a tareas de valor. Decisiones basadas en datos. Cero sorpresas de
-                stock en temporada alta.
+                Equipo enfocado en tareas de valor. Decisiones basadas en predicciones, no en
+                corazonadas. Cero quiebre de stock en los últimos 8 meses.
               </p>
             </div>
           </div>
@@ -205,9 +205,9 @@ export default function CasoReal() {
           }`}
           style={{ transitionDelay: inView ? "300ms" : "0ms" }}
         >
-          ¿Querés ver los números reales para tu empresa?{" "}
+          Estos son los números de una empresa real. ¿Querés ver los tuyos?{" "}
           <a href="#contacto" className="text-[var(--color-primary)] hover:underline font-medium">
-            Hacemos un diagnóstico gratuito en 48hs.
+            Diagnóstico gratuito en 48hs.
           </a>
         </p>
       </div>

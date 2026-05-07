@@ -7,9 +7,9 @@ const scenarios = [
     industry: "Distribuidora de alimentos · 45 empleados",
     lines: [
       { type: "check", text: "3 flujos de trabajo con alto potencial de automatización" },
-      { type: "check", text: "23hs semanales recuperables en reporting manual" },
+      { type: "check", text: "23hs/semana atrapadas en reportes manuales, recuperables" },
       { type: "check", text: "ROI proyectado: 2.4x en los primeros 6 meses" },
-      { type: "check", text: "Prioridad recomendada: digitalizar la cadena de despacho" },
+      { type: "check", text: "Quick win: digitalizar la cadena de despacho en 3 semanas" },
     ],
   },
   {
@@ -17,8 +17,8 @@ const scenarios = [
     lines: [
       { type: "check", text: "Gestión de inventario con 34% de sobrestock eliminable" },
       { type: "check", text: "Atención al cliente automatizable en un 60%" },
-      { type: "check", text: "Ahorro estimado: $850.000 ARS/mes en operaciones" },
-      { type: "check", text: "Oportunidad detectada: personalización de ofertas con IA predictiva" },
+      { type: "check", text: "Ahorro proyectado: $850K ARS/mes en costos operativos" },
+      { type: "check", text: "Oportunidad no explotada: IA predictiva en recomendaciones (+18% conversión)" },
     ],
   },
   {
@@ -26,7 +26,7 @@ const scenarios = [
     lines: [
       { type: "check", text: "Carga de datos manual reemplazable con extracción automática" },
       { type: "check", text: "15hs semanales en tareas repetitivas de conciliación" },
-      { type: "check", text: "Tiempo de cierre mensual reducible de 5 días a 1" },
+      { type: "check", text: "Cierre mensual: de 5 días a 1. Sin errores de conciliación." },
       { type: "check", text: "Quick win identificado: automatización de liquidaciones de IVA" },
     ],
   },
@@ -184,7 +184,7 @@ export default function Hero() {
         </div>
 
         <p className="text-center text-[var(--color-muted)] mt-6 sm:mt-8 text-xs sm:text-lg max-w-xl mx-auto">
-          Esto no es un video. Es lo que hacemos. Pero con <span className="text-white font-medium">tus datos</span>.
+          Esto no es una demo. Es lo que hacemos el día 1. Pero con <span className="text-white font-medium">tus datos</span>.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-6 sm:mt-8">

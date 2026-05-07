@@ -3,9 +3,9 @@
 import { useInView } from "@/hooks/useInView";
 
 const steps = [
-  { n: "01", title: "Diagnóstico", desc: "Mapeamos tu operación y encontramos las oportunidades en 48hs." },
-  { n: "02", title: "Implementación", desc: "Diseñamos y desplegamos soluciones en semanas, no meses." },
-  { n: "03", title: "Resultados", desc: "Medimos impacto real: horas recuperadas, costos reducidos, ROI claro." },
+  { n: "01", title: "Diagnóstico", desc: "Entramos, mapeamos, y en 48hs tenés un informe con los 3 procesos que más te cuestan." },
+  { n: "02", title: "Implementación", desc: "Arrancamos por el quick win de mayor impacto. Primer entregable en 2 semanas." },
+  { n: "03", title: "Resultados", desc: "No declaramos victoria. La medimos. Horas recuperadas, costos reducidos, ROI claro." },
 ];
 
 export default function Proceso() {
@@ -21,7 +21,7 @@ export default function Proceso() {
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Cómo Funciona</h2>
           <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-2xl mx-auto">
-            Tres pasos. Sin vueltas. Del diagnóstico a los resultados en semanas.
+            Sin vueltas. Sin meses de descubrimiento. Del diagnóstico al primer resultado medible en semanas.
           </p>
         </div>
 

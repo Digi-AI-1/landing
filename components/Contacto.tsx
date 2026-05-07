@@ -51,9 +51,9 @@ export default function Contacto() {
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Hablemos</h2>
           <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-3xl mx-auto">
-            Si llegaste hasta acá, ya sabés que hay algo en tu operación que la tecnología puede
-            resolver mejor. No lo dejes enfriar — en 48hs tenés un diagnóstico concreto y un plan
-            accionable.
+            Si llegaste hasta acá, ya sabés que hay algo en tu operación que se puede resolver
+            mejor. No lo dejes enfriar: en 48hs tenés un diagnóstico concreto y en 2 semanas el
+            primer entregable.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export default function Contacto() {
           >
             <h3 className="text-white font-semibold text-xl sm:text-2xl mb-2">Contanos Sobre Tu Empresa</h3>
             <p className="text-[var(--color-muted)] text-sm sm:text-base mb-6">
-              Dejanos tu consulta y te respondemos en menos de 24hs hábiles.
+              Dejanos tu consulta y recibís respuesta en menos de 24hs hábiles. Sin compromiso.
             </p>
 
             {state === "success" ? (
@@ -101,7 +101,7 @@ export default function Contacto() {
                     name="mensaje"
                     required
                     rows={6}
-                    defaultValue="Hola, me interesa el diagnóstico gratuito para ver qué oportunidades hay en mi empresa. Quedo disponible para coordinar."
+                    defaultValue="Hola, me interesa el diagnóstico gratuito. Somos [rubro/industria] con [X] empleados. Quedo disponible para coordinar."
                     className="w-full px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-white placeholder:text-[var(--color-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors resize-none"
                   />
                 </div>
@@ -130,7 +130,7 @@ export default function Contacto() {
           >
             <h3 className="text-white font-semibold text-xl sm:text-2xl mb-1">¿Listo Para Arrancar?</h3>
             <p className="text-[var(--color-muted)] text-sm sm:text-base leading-relaxed mb-4">
-              Agendá 20 minutos. Sin vueltas, directo a tu problema.
+              20 minutos. Vos contás el problema, nosotros te mostramos si hay solución. Sin pitch de venta.
             </p>
 
             <div className="rounded-xl overflow-hidden border border-[var(--color-border)] h-[420px] sm:h-[540px]">

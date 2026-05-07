@@ -6,7 +6,7 @@ const insights = [
   {
     titulo: "El 90% de las 'Transformaciones Digitales' en Argentina Fracasan",
     texto:
-      "No fracasan por la tecnología. Fracasan porque las implementa gente que no entiende el negocio detrás. Un modelo de IA sin contexto operativo es un gasto, no una inversión. Por eso empezamos por tu operación, no por la herramienta.",
+      "No fracasan por la tecnología. Fracasan porque se implementan sin entender el negocio. Un modelo de IA sin contexto operativo es un gasto, no una inversión. Nosotros empezamos por tu operación, no por la herramienta.",
   },
   {
     titulo: "Tu Competencia Ya Está Usando IA. No Te lo Va a Contar.",
@@ -16,7 +16,7 @@ const insights = [
   {
     titulo: "La Tecnología No Es Cara. Implementarla Mal, Sí.",
     texto:
-      "Una licencia de IA cuesta menos que un sueldo junior. El costo real está en elegir mal qué automatizar, en datos sin estructura y en equipos que no saben interpretar los resultados. Ese es exactamente el problema que resolvemos.",
+      "Una licencia de IA cuesta menos que un sueldo junior. El costo real está en elegir mal qué automatizar, en datos sin estructura y en equipos que no saben interpretar los resultados. Ese es el problema que resolvemos, y por eso el diagnóstico va primero.",
   },
 ];
 
@@ -38,12 +38,12 @@ export default function Tecnologia() {
           }`}
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-            La Tecnología Cambió. ¿Y Tu Empresa?
+            La Tecnología Cambió. ¿Tu Operación También?
           </h2>
           <p className="text-[var(--color-muted)] text-sm sm:text-lg max-w-3xl mx-auto">
-            Los modelos de IA que antes requerían equipos de 20 ingenieros hoy se implementan en
-            semanas. Si tu operación todavía depende de planillas y procesos manuales, estás a
-            tiempo de cambiar eso.
+            Lo que en 2022 requería 20 ingenieros y 18 meses, hoy se implementa en 6 semanas.
+            Si tu operación depende de planillas y procesos manuales, el costo de no actuar
+            crece cada trimestre.
           </p>
         </div>
 
