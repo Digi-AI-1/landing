@@ -11,9 +11,12 @@ export default function ROICalculator() {
   const { ref, inView } = useInView(0.08);
   const [hours, setHours] = useState(12);
   const [rate, setRate] = useState(5000);
+  const [result, setResult] = useState<{ hours: number; savings: number } | null>(null);
 
-  const hoursPerYear = Math.round(hours * 0.7 * 52);
-  const savingsPerYear = hoursPerYear * rate;
+  function calculate() {
+    const h = Math.round(hours * 0.7 * 52);
+    setResult({ hours: h, savings: h * rate });
+  }
 
   return (
     <section className="relative py-16 md:py-24 px-6 orb-section">
@@ -100,6 +103,13 @@ export default function ROICalculator() {
                 </div>
               </div>
 
+              <button
+                onClick={calculate}
+                className="w-full py-3 rounded-lg bg-[var(--color-btn)] hover:bg-[var(--color-btn-hover)] text-white font-semibold transition-colors text-sm sm:text-base"
+              >
+                Calcular Ahorro
+              </button>
+
               <p className="text-[var(--color-muted)] text-xs leading-relaxed">
                 Estimación basada en que el 70% de las tareas manuales repetibles son automatizables en un plazo de 6 semanas.
               </p>
@@ -107,29 +117,39 @@ export default function ROICalculator() {
 
             {/* Outputs */}
             <div className="flex flex-col gap-4 justify-center">
-              <div className="p-5 rounded-xl bg-[var(--color-bg)] border border-[var(--color-border)]">
-                <div className="text-[var(--color-muted)] text-sm mb-2">Horas recuperables por año</div>
-                <div className="text-4xl font-bold text-white font-mono">
-                  {hoursPerYear}
-                  <span className="text-xl text-[var(--color-muted)] font-normal ml-1">hs</span>
-                </div>
-              </div>
+              {result ? (
+                <>
+                  <div className="p-5 rounded-xl bg-[var(--color-bg)] border border-[var(--color-border)]">
+                    <div className="text-[var(--color-muted)] text-sm mb-2">Horas recuperables por año</div>
+                    <div className="text-3xl sm:text-4xl font-bold text-white font-mono">
+                      {result.hours}
+                      <span className="text-lg sm:text-xl text-[var(--color-muted)] font-normal ml-1">hs</span>
+                    </div>
+                  </div>
 
-              <div className="p-5 rounded-xl bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/25">
-                <div className="text-[var(--color-muted)] text-sm mb-2">Ahorro anual estimado</div>
-                <div className="text-4xl font-bold text-[var(--color-primary)] font-mono">
-                  ${formatARS(savingsPerYear)}
-                  <span className="text-xl text-[var(--color-muted)] font-normal ml-1">ARS</span>
-                </div>
-              </div>
+                  <div className="p-5 rounded-xl bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/25">
+                    <div className="text-[var(--color-muted)] text-sm mb-2">Ahorro anual estimado</div>
+                    <div className="text-3xl sm:text-4xl font-bold text-[var(--color-primary)] font-mono">
+                      ${formatARS(result.savings)}
+                      <span className="text-lg sm:text-xl text-[var(--color-muted)] font-normal ml-1">ARS</span>
+                    </div>
+                  </div>
 
-              <div className="px-5 py-3 rounded-xl border border-[var(--color-border)] flex items-center gap-3">
-                <span className="text-[var(--color-cyan)]">⚡</span>
-                <span className="text-[var(--color-muted)] text-sm">
-                  Resultados visibles en{" "}
-                  <span className="text-white font-medium">6 semanas</span> de implementación.
-                </span>
-              </div>
+                  <div className="px-5 py-3 rounded-xl border border-[var(--color-border)] flex items-center gap-3">
+                    <span className="text-[var(--color-cyan)]">⚡</span>
+                    <span className="text-[var(--color-muted)] text-sm">
+                      Resultados visibles en{" "}
+                      <span className="text-white font-medium">6 semanas</span> de implementación.
+                    </span>
+                  </div>
+                </>
+              ) : (
+                <div className="flex items-center justify-center h-full">
+                  <p className="text-[var(--color-muted)] text-sm text-center">
+                    Ajustá los valores y tocá<br /><span className="text-white font-medium">Calcular Ahorro</span> para ver los resultados.
+                  </p>
+                </div>
+              )}
             </div>
 
           </div>
